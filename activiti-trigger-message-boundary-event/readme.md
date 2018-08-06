@@ -9,7 +9,7 @@
 ## Configuration Steps
 
 ### Activiti Setup and Process Deployment
-1. Import the ![Save-Face.zip](Save-Face.zip) app available in this project into Activiti.
+1. Import the ![Save-Face-BME.zip](Save-Face-BME.zip) app available in this project into Activiti.
 2. The process flow.  ![Process-Flow](Process-Flow.png)
 3. The process configuration. ![Process-Configuration](Process-Configuration.png)
 4. The boundary message event. ![Message-Boundary-Event](Message-Boundary-Event.png)
