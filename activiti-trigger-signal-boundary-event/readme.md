@@ -10,7 +10,7 @@
 
 ### Activiti Setup and Process Deployment
 1. Setup Alfresco Activiti if you don't have one already. Instructions & help available at [Activiti Docs](http://docs.alfresco.com/activiti/docs/), [Alfresco BPM Community](https://community.alfresco.com/community/bpm)
-2. Import the ![Save-Face.zip](Save-Face.zip) app available in this project into Activiti.
+2. Import the Save-Face.zip(Save-Face.zip) app available in this project into Activiti.
 3. The process flow.  ![Process-Flow](Process-Flow.png)
 4. The process configuration. ![Process-Configuration](Process-Configuration.png)
 5. The boundary message event. ![Message-Boundary-Event](Message-Boundary-Event.png)
