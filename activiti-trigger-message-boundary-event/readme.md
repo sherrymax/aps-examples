@@ -3,7 +3,7 @@
 
 ### Prerequisites to run this demo end-2-end
 
-* Alfresco Activiti Enterprise (Version 1.9 and above) - If you don't have it already, you can download a 30 day trial from [Alfresco Activiti](https://www.alfresco.com/products/business-process-management/alfresco-activiti)
+* Alfresco Process Services powered by Activiti (Version 1.9 and above) - If you don't have it already, you can download a 30 day trial from [Alfresco Activiti](https://www.alfresco.com/products/business-process-management/alfresco-activiti)
 
 
 ## Configuration Steps
