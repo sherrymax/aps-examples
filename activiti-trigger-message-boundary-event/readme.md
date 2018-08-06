@@ -1,5 +1,8 @@
 #### The project contains all the components required to trigger a boundary message event using REST calls
 
+### Use-Case / Requirement
+A serial approval pipeline process with two-levels. The tasks approved by first-level approver should route to task-list of second-level approver (Manager). The first-level approver should also have the capability to revert/recall the submitted tasks. Thus recalled tasks should be closed/moved out from second-level approver's (Manager) task-list and requeued back to first-level approver's inbox, without any loss of data.
+
 
 ### Prerequisites to run this demo end-2-end
 
