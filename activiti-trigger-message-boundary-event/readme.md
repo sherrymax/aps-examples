@@ -3,19 +3,18 @@
 
 ### Prerequisites to run this demo end-2-end
 
-* Alfresco Activiti Enterprise (Version 1.9 and above) - If you don't have it already, you can download a 30 day trial from [Alfresco Activiti](https://www.alfresco.com/products/business-process-management/alfresco-activiti)
+* Alfresco Process Services (powered by Activiti) (Version 1.9 and above) - If you don't have it already, you can download a 30 day trial from [Alfresco Process Services (APS)](https://www.alfresco.com/products/business-process-management/alfresco-activiti).Instructions & help available at [Activiti Docs](http://docs.alfresco.com/activiti/docs/), [Alfresco BPM Community](https://community.alfresco.com/community/bpm)
 
 
 ## Configuration Steps
 
 ### Activiti Setup and Process Deployment
-1. Setup Alfresco Activiti if you don't have one already. Instructions & help available at [Activiti Docs](http://docs.alfresco.com/activiti/docs/), [Alfresco BPM Community](https://community.alfresco.com/community/bpm)
-2. Import the ![Save-Face.zip](Save-Face.zip) app available in this project into Activiti.
-3. The process flow.  ![Process-Flow](Process-Flow.png)
-4. The process configuration. ![Process-Configuration](Process-Configuration.png)
-5. The boundary message event. ![Message-Boundary-Event](Message-Boundary-Event.png)
-6. The message event defenition. ![Message-Defenition](Message-Defenition.png)
-7. Publish/Deploy the App.
+1. Import the ![Save-Face.zip](Save-Face.zip) app available in this project into Activiti.
+2. The process flow.  ![Process-Flow](Process-Flow.png)
+3. The process configuration. ![Process-Configuration](Process-Configuration.png)
+4. The boundary message event. ![Message-Boundary-Event](Message-Boundary-Event.png)
+5. The message event defenition. ![Message-Defenition](Message-Defenition.png)
+6. Publish/Deploy the App.
 
 ### POSTMAN
 1. Use POSTMAN to make REST calls and trigger the Boundary Message Events.
