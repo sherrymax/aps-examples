@@ -47,3 +47,9 @@ The body of the PUT call is as follows:
 The configuration is shown below. ![REST-Trigger-SME](REST-Trigger-SME.png)
 
 ### Run the DEMO
+
+### References
+https://www.activiti.org/userguide/index.html#restQueryVariable
+https://www.activiti.org/userguide/index.html#restExecutionsGet
+http://localhost:3000/activiti-app/api-explorer.html#/
+
