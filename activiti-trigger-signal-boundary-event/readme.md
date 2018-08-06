@@ -10,7 +10,7 @@
 
 ### Activiti Setup and Process Deployment
 1. Setup Alfresco Activiti if you don't have one already. Instructions & help available at [Activiti Docs](http://docs.alfresco.com/activiti/docs/), [Alfresco BPM Community](https://community.alfresco.com/community/bpm)
-2. Import the Save-Face.zip(Save-Face.zip) app available in this project into Activiti.
+2. Import the ![Save-Face.zip](Save-Face.zip) app available in this project into Activiti.
 3. The process flow.  ![Process-Flow](Process-Flow.png)
 4. The process configuration. ![Process-Configuration](Process-Configuration.png)
 5. The boundary message event. ![Message-Boundary-Event](Message-Boundary-Event.png)
@@ -20,14 +20,17 @@
 ### POSTMAN
 1. Use POSTMAN to make REST calls and trigger the Boundary Message Events.
 2. As the first step, REST GET call should be to get the Execution ID of the targeted Boundary Message Event.
+```
 http://<hostname>:<port>/activiti-app/api/runtime/executions?tenantId=<tenantId>&processInstanceId=<instanceID>
-
+```
 The configuration is shown below. ![REST-BME-ExeId](REST-BME-ExeId.png)
 If necessary, the value of Execution ID can be cross-verified by querying the DB.
 ![DB-table-value](DB-table-value.png)
 
 3. As the second step, REST PUT call should send trigger for Boundary Message Event.
+```
 http://<hostname>:<port>/activiti-app/api/runtime/executions/<execution-id-of-boundar-message-event>?tenantId=<tenantId>
+```
 The header of PUT call is as follows:
 ```
 Authorization = Basic xxxxxxxxxxxxxxx
