@@ -1,4 +1,4 @@
-#### The project contains all the components required to trigger a boundary message event using REST calls
+#### The project contains all the components required to trigger a boundary signal event using REST calls
 
 
 ### Prerequisites to run this demo end-2-end
@@ -13,13 +13,13 @@
 2. Import the ![Save-Face.zip](Save-Face.zip) app available in this project into Activiti.
 3. The process flow.  ![Process-Flow](Process-Flow.png)
 4. The process configuration. ![Process-Configuration](Process-Configuration.png)
-5. The boundary message event. ![Message-Boundary-Event](Message-Boundary-Event.png)
-6. The message event defenition. ![Message-Defenition](Message-Defenition.png)
+5. The boundary signal event. ![Signal-Boundary-Event](Signal-Boundary-Event.png)
+6. The signal event definition. ![Signal-Definition](Signal-Definition.png)
 7. Publish/Deploy the App.
 
 ### POSTMAN
-1. Use POSTMAN to make REST calls and trigger the Boundary Message Events.
-2. As the first step, REST GET call should be to get the Execution ID of the targeted Boundary Message Event.
+1. Use POSTMAN to make REST calls and trigger the Boundary Signal Events.
+2. As the first step, REST GET call should be to get the Execution ID of the targeted Boundary Signal Event.
 ```
 http://<hostname>:<port>/activiti-app/api/runtime/executions?tenantId=<tenantId>&processInstanceId=<instanceID>
 ```
@@ -27,9 +27,9 @@ The configuration is shown below. ![REST-BME-ExeId](REST-BME-ExeId.png)
 If necessary, the value of Execution ID can be cross-verified by querying the DB.
 ![DB-table-value](DB-table-value.png)
 
-3. As the second step, REST PUT call should send trigger for Boundary Message Event.
+3. As the second step, REST PUT call should send trigger for Boundary Signal Event.
 ```
-http://<hostname>:<port>/activiti-app/api/runtime/executions/<execution-id-of-boundar-message-event>?tenantId=<tenantId>
+http://<hostname>:<port>/activiti-app/api/runtime/executions/<execution-id-of-boundary-signal-event>?tenantId=<tenantId>
 ```
 The header of PUT call is as follows:
 ```
@@ -40,8 +40,8 @@ content-type = application/json
 The body of the PUT call is as follows: 
 ```
 {
-"action":"messageEventReceived",
-"messageName":"saveFaceMessage"
+"action":"signalEventReceived",
+"signalName":"saveFaceSignal"
 }
 ```
 The configuration is shown below. ![REST-Trigger-BME](REST-Trigger-BME.png)
