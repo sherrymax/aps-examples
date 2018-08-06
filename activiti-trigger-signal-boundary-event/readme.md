@@ -23,7 +23,7 @@
 ```
 http://<hostname>:<port>/activiti-app/api/runtime/executions?tenantId=<tenantId>&processInstanceId=<instanceID>
 ```
-The configuration is shown below. ![REST-BME-ExeId](REST-BME-ExeId.png)
+The configuration is shown below. ![REST-SME-ExeId](REST-SME-ExeId.png)
 If necessary, the value of Execution ID can be cross-verified by querying the DB.
 ![DB-table-value](DB-table-value.png)
 
@@ -44,6 +44,6 @@ The body of the PUT call is as follows:
 "signalName":"saveFaceSignal"
 }
 ```
-The configuration is shown below. ![REST-Trigger-BME](REST-Trigger-BME.png)
+The configuration is shown below. ![REST-Trigger-SME](REST-Trigger-SME.png)
 
 ### Run the DEMO
