@@ -34,7 +34,7 @@ Authorization = Basic xxxxxxxxxxxxxxx
 cache-control = no-cache
 content-type = application/json
 ```
-The body of the PUT call is as follows:
+The body of the PUT call is as follows: 
 ```
 {
 "action":"messageEventReceived",
