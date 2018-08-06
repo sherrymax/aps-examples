@@ -1,9 +1,12 @@
-#### The project contains all the components required to trigger a boundary signal event using REST calls
+#### The project contains all the components required to trigger a boundary message event using REST calls
+
+### Use-Case / Requirement
+A serial approval pipeline process with two-levels. The tasks approved by first-level approver should route to task-list of second-level approver (Manager). The first-level approver should also have the capability to revert/recall the submitted tasks. Thus recalled tasks should be closed/moved out from second-level approver's (Manager) task-list and requeued back to first-level approver's inbox, without any loss of data.
 
 
 ### Prerequisites to run this demo end-2-end
 
-* Alfresco Activiti Enterprise (Version 1.9 and above) - If you don't have it already, you can download a 30 day trial from [Alfresco Activiti](https://www.alfresco.com/products/business-process-management/alfresco-activiti)
+* Alfresco Process Services (powered by Activiti) (Version 1.9 and above) - If you don't have it already, you can download a 30 day trial from [Alfresco Process Services (APS)](https://www.alfresco.com/products/business-process-management/alfresco-activiti).Instructions & help available at [Activiti Docs](http://docs.alfresco.com/activiti/docs/), [Alfresco BPM Community](https://community.alfresco.com/community/bpm)
 
 
 ## Configuration Steps
