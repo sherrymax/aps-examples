@@ -10,11 +10,11 @@
 
 ### Activiti Setup and Process Deployment
 1. Setup Alfresco Activiti if you don't have one already. Instructions & help available at [Activiti Docs](http://docs.alfresco.com/activiti/docs/), [Alfresco BPM Community](https://community.alfresco.com/community/bpm)
-2. Import the ![Save Face.zip](Save Face.zip) app available in this project into Activiti.
-3. The process flow.  ![Process Flow](Process Flow.png)
-4. The process configuration. ![Process Configuration](Process Configuration.png)
+2. Import the ![Save-Face.zip](Save-Face.zip) app available in this project into Activiti.
+3. The process flow.  ![Process-Flow](Process-Flow.png)
+4. The process configuration. ![Process-Configuration](Process-Configuration.png)
 5. The boundary message event. ![Message-Boundary-Event](Message-Boundary-Event.png)
-6. The message event defenition. ![Message Defenition](Message Defenition.png)
+6. The message event defenition. ![Message-Defenition](Message-Defenition.png)
 7. Publish/Deploy the App.
 
 ### POSTMAN
@@ -30,7 +30,7 @@ If necessary, the value of Execution ID can be cross-verified by querying the DB
 http://<hostname>:<port>/activiti-app/api/runtime/executions/<execution-id-of-boundar-message-event>?tenantId=<tenantId>
 The header of PUT call is as follows:
 ```
-Authorization = Basic abcdefgh
+Authorization = Basic xxxxxxxxxxxxxxx
 cache-control = no-cache
 content-type = application/json
 ```
@@ -43,5 +43,4 @@ The body of the PUT call is as follows:
 ```
 The configuration is shown below. ![REST-Trigger-BME](REST-Trigger-BME.png)
 
-
-A sample configuration show below. ![sample-process-and-conf](sample-process-and-conf.png)
+### Run the DEMO
