@@ -22,7 +22,7 @@ A serial approval pipeline process with two-levels. The tasks approved by first-
 ### POSTMAN
 1. Use POSTMAN to make REST calls and trigger the Boundary Message Events. 
 
-TIP: Quickly import REST Calls from [POSTMAN Collection](Postman-Collection-MessageEvents.postman_collection.json).
+    TIP: Quickly import REST Calls from [POSTMAN Collection](Postman-Collection-MessageEvents.postman_collection.json).
 
 2. As the first step, REST GET call should be to get the Execution ID of the targeted Boundary Message Event.
 ```
