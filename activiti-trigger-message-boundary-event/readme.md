@@ -54,6 +54,6 @@ The configuration is shown below. ![REST-Trigger-BME](REST-Trigger-BME.png)
 ### Run the DEMO
 
 ### References
-https://www.activiti.org/userguide/index.html#restQueryVariable
-https://www.activiti.org/userguide/index.html#restExecutionsGet
-http://localhost:3000/activiti-app/api-explorer.html#/
+1. https://www.activiti.org/userguide/index.html#restQueryVariable
+2. https://www.activiti.org/userguide/index.html#restExecutionsGet
+3. http://localhost:3000/activiti-app/api-explorer.html#/
