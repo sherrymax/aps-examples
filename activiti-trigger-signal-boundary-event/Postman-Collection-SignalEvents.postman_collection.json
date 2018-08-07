@@ -1,0 +1,136 @@
+{
+	"id": "758f7a20-ed74-4b3c-bcbb-4a3c561b3570",
+	"name": "Postman-Collection-SignalEvents",
+	"description": null,
+	"auth": null,
+	"events": [
+		{
+			"listen": "prerequest",
+			"script": {
+				"id": "22410bc9-8466-42c5-987f-f2c6527d355d",
+				"type": "text/javascript",
+				"exec": [
+					""
+				]
+			}
+		},
+		{
+			"listen": "test",
+			"script": {
+				"id": "d18385f3-e62c-4c84-af38-b3fbe7ef4511",
+				"type": "text/javascript",
+				"exec": [
+					""
+				]
+			}
+		}
+	],
+	"variables": null,
+	"order": [
+		"bb8554a6-3b32-4acc-93ce-8a117b583546",
+		"880ac64c-bf63-496b-bc43-12a62e3f3c82"
+	],
+	"folders_order": [],
+	"folders": [],
+	"requests": [
+		{
+			"id": "880ac64c-bf63-496b-bc43-12a62e3f3c82",
+			"name": "Get All Executions For a Tenant By Instance ID",
+			"url": "http://localhost:3000/activiti-app/api/runtime/executions?tenantId=tenant_1&processInstanceId=5333",
+			"description": "",
+			"data": null,
+			"dataMode": "params",
+			"headerData": [],
+			"method": "GET",
+			"pathVariableData": [],
+			"queryParams": [
+				{
+					"key": "tenantId",
+					"value": "tenant_1",
+					"equals": true,
+					"description": "",
+					"enabled": true
+				},
+				{
+					"key": "processInstanceId",
+					"value": "5333",
+					"equals": true,
+					"description": "",
+					"enabled": true
+				}
+			],
+			"auth": {
+				"type": "basic",
+				"basic": [
+					{
+						"key": "password",
+						"value": "demo",
+						"type": "string"
+					},
+					{
+						"key": "username",
+						"value": "demo",
+						"type": "string"
+					}
+				]
+			},
+			"events": [],
+			"folder": null,
+			"headers": "",
+			"pathVariables": {}
+		},
+		{
+			"id": "bb8554a6-3b32-4acc-93ce-8a117b583546",
+			"name": "Invoke Signal Event By Execution ID",
+			"url": "http://localhost:3000/activiti-app/api/runtime/executions/2579?tenantId=tenant_1",
+			"description": "Execution ID is similar to Token. These IDs are available from act_ru_event_subbscr table.",
+			"data": [],
+			"dataMode": "raw",
+			"headerData": [
+				{
+					"key": "cache-control",
+					"value": "no-cache",
+					"description": "",
+					"enabled": true
+				},
+				{
+					"key": "content-type",
+					"value": "application/json",
+					"description": "",
+					"enabled": true
+				}
+			],
+			"method": "PUT",
+			"pathVariableData": [],
+			"queryParams": [
+				{
+					"key": "tenantId",
+					"value": "tenant_1",
+					"equals": true,
+					"description": "",
+					"enabled": true
+				}
+			],
+			"auth": {
+				"type": "basic",
+				"basic": [
+					{
+						"key": "password",
+						"value": "demo",
+						"type": "string"
+					},
+					{
+						"key": "username",
+						"value": "demo",
+						"type": "string"
+					}
+				]
+			},
+			"events": [],
+			"folder": null,
+			"rawModeData": "{\n\"action\":\"signalEventReceived\",\n\"signalName\":\"testSigDef\"\n}",
+			"headers": "cache-control: no-cache\ncontent-type: application/json\n",
+			"pathVariables": {}
+		}
+	]
+}
