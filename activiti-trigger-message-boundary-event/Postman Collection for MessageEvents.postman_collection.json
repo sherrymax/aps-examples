@@ -1,0 +1,115 @@
+{
+	"id": "758f7a20-ed74-4b3c-bcbb-4a3c561b3570",
+	"name": "Postman Collection for MessageEvents",
+	"description": null,
+	"auth": null,
+	"events": null,
+	"variables": null,
+	"order": [
+		"fc725d82-9de0-4ec4-ad17-05d7ef6a9d53",
+		"880ac64c-bf63-496b-bc43-12a62e3f3c82"
+	],
+	"folders_order": [],
+	"folders": [],
+	"requests": [
+		{
+			"id": "880ac64c-bf63-496b-bc43-12a62e3f3c82",
+			"name": "Get All Executions For a Tenant By Instance ID",
+			"url": "http://localhost:3000/activiti-app/api/runtime/executions?tenantId=tenant_1&processInstanceId=5333",
+			"description": "",
+			"data": null,
+			"dataMode": "params",
+			"headerData": [],
+			"method": "GET",
+			"pathVariableData": [],
+			"queryParams": [
+				{
+					"key": "tenantId",
+					"value": "tenant_1",
+					"equals": true,
+					"description": "",
+					"enabled": true
+				},
+				{
+					"key": "processInstanceId",
+					"value": "5333",
+					"equals": true,
+					"description": "",
+					"enabled": true
+				}
+			],
+			"auth": {
+				"type": "basic",
+				"basic": [
+					{
+						"key": "password",
+						"value": "demo",
+						"type": "string"
+					},
+					{
+						"key": "username",
+						"value": "demo",
+						"type": "string"
+					}
+				]
+			},
+			"events": [],
+			"folder": null,
+			"headers": "",
+			"pathVariables": {}
+		},
+		{
+			"id": "fc725d82-9de0-4ec4-ad17-05d7ef6a9d53",
+			"name": "Invoke Message Event By Execution ID",
+			"url": "http://localhost:3000/activiti-app/api/runtime/executions/5207?tenantId=tenant_1",
+			"description": "Execution ID is similar to Token. These IDs are available from act_ru_event_subbscr table.",
+			"data": [],
+			"dataMode": "raw",
+			"headerData": [
+				{
+					"key": "cache-control",
+					"value": "no-cache",
+					"description": "",
+					"enabled": true
+				},
+				{
+					"key": "content-type",
+					"value": "application/json",
+					"description": "",
+					"enabled": true
+				}
+			],
+			"method": "PUT",
+			"pathVariableData": [],
+			"queryParams": [
+				{
+					"key": "tenantId",
+					"value": "tenant_1",
+					"equals": true,
+					"description": "",
+					"enabled": true
+				}
+			],
+			"auth": {
+				"type": "basic",
+				"basic": [
+					{
+						"key": "password",
+						"value": "demo",
+						"type": "string"
+					},
+					{
+						"key": "username",
+						"value": "demo",
+						"type": "string"
+					}
+				]
+			},
+			"events": [],
+			"folder": null,
+			"rawModeData": "{\n\"action\":\"messageEventReceived\",\n\"messageName\":\"saveFaceMessage\"\n}",
+			"headers": "cache-control: no-cache\ncontent-type: application/json\n",
+			"pathVariables": {}
+		}
+	]
+}
