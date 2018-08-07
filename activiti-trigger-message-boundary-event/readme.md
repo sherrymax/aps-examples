@@ -20,7 +20,8 @@ A serial approval pipeline process with two-levels. The tasks approved by first-
 6. Publish/Deploy the App.
 
 ### POSTMAN
-1. Use POSTMAN to make REST calls and trigger the Boundary Message Events. Import the REST Calls from the [POSTMAN Collection](Postman-Collection-MessageEvents.postman_collection.json).
+1. Use POSTMAN to make REST calls and trigger the Boundary Message Events. 
+   As a time saver, import the REST Calls from the [POSTMAN Collection](Postman-Collection-MessageEvents.postman_collection.json).
 2. As the first step, REST GET call should be to get the Execution ID of the targeted Boundary Message Event.
 ```
 http://<hostname>:<port>/activiti-app/api/runtime/executions?tenantId=<tenantId>&processInstanceId=<instanceID>
