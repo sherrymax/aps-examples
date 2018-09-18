@@ -3,3 +3,4 @@
 A repository for Alfresco Process Services (APS).
 
 ![APS](APS.png)
+![APS Version](APS-Version.png)
