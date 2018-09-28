@@ -17,12 +17,14 @@ Generate another document by combining the cover page and the merged documents.
 2. Import the ![Merge-Documents.zip](Merge-Documents.zip) app available in this project into Activiti.
 3. The process flow.  ![Process-Flow](Process-Flow.png)
 4. The process configuration. ![Process-Configuration-1](Process-Configuration-1.png)
-5. The javascript code to merge document. ![Javascript](Javascript.png)
-```
-java.lang.System.out.println("***  Started - Merge document *** ");
-documentMergeBean.mergeDocuments('coverLetterT;file1;file2', 'coverLetterT', execution);
-java.lang.System.out.println("***  Finished - Merge document *** ");
-```
+5. The javascript code to merge document. 
+    ```
+    java.lang.System.out.println("***  Started - Merge document *** ");
+    documentMergeBean.mergeDocuments('coverLetterDoc;file1;file2', 'coverLetterT', execution);
+    java.lang.System.out.println("***  Finished - Merge document *** ");
+    ```
+
+![Javascript](Javascript.png)
 
 6. Publish to Alfresco configuration. ![Publish](Publish.png)
 7. Publish/Deploy the App.
