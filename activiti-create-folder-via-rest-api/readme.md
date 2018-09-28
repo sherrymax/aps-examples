@@ -1,4 +1,4 @@
-#### The project contains all the components required to trigger a boundary message event using REST calls
+#### The project contains all the components required to create an ACS folder from APS via REST calls
 
 ### Use-Case / Requirement
 Build a process to create a folder in the ACS repo with some metdata.
@@ -19,37 +19,6 @@ Build a process to create a folder in the ACS repo with some metdata.
 5. The Endpoint configuration. ![Endpoint](Endpoint.png)
 6. Publish/Deploy the App.
 
-### POSTMAN
-1. Use POSTMAN to make REST calls and trigger the Boundary Message Events. 
-
-    TIP: Quickly import REST Calls from [POSTMAN Collection](Postman-Collection-MessageEvents.postman_collection.json).
-
-2. As the first step, REST GET call should be to get the Execution ID of the targeted Boundary Message Event.
-```
-http://<hostname>:<port>/activiti-app/api/runtime/executions?tenantId=<tenantId>&processInstanceId=<instanceID>
-```
-The configuration is shown below. ![REST-BME-ExeId](REST-BME-ExeId.png)
-If necessary, the value of Execution ID can be cross-verified by querying the DB.
-![DB-table-value](DB-table-value.png)
-
-3. As the second step, REST PUT call should send trigger for Boundary Message Event.
-```
-http://<hostname>:<port>/activiti-app/api/runtime/executions/<execution-id-of-boundar-message-event>?tenantId=<tenantId>
-```
-The header of PUT call is as follows:
-```
-Authorization = Basic xxxxxxxxxxxxxxx
-cache-control = no-cache
-content-type = application/json
-```
-The body of the PUT call is as follows: 
-```
-{
-"action":"messageEventReceived",
-"messageName":"saveFaceMessage"
-}
-```
-The configuration is shown below. ![REST-Trigger-BME](REST-Trigger-BME.png)
 
 ### Run the DEMO
 
