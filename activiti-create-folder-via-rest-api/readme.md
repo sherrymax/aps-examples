@@ -23,6 +23,6 @@ Build a process to create a folder in the ACS repo with some metdata.
 ### Run the DEMO
 
 ### References
-https://api-explorer.alfresco.com/api-explorer/#!/nodes/createNode
-https://community.alfresco.com/community/ecm/blog/2016/10/24/v1-rest-api-part-3-creating-nodes
-https://api-explorer.alfresco.com/api-explorer/#!/nodes/createNode
+1. https://api-explorer.alfresco.com/api-explorer/#!/nodes/createNode
+2. https://community.alfresco.com/community/ecm/blog/2016/10/24/v1-rest-api-part-3-creating-nodes
+3. https://api-explorer.alfresco.com/api-explorer/#!/nodes/createNode
