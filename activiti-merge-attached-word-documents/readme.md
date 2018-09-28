@@ -20,7 +20,7 @@ Generate another document by combining the cover page and the merged documents.
 5. The javascript code to merge document. 
     ```
     java.lang.System.out.println("***  Started - Merge document *** ");
-    documentMergeBean.mergeDocuments('coverLetterDoc;file1;file2', 'coverLetterT', execution);
+    documentMergeBean.mergeDocuments('coverLetterDoc;file1;file2', 'coverLetterDoc', execution);
     java.lang.System.out.println("***  Finished - Merge document *** ");
     ```
 
