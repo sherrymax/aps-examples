@@ -23,6 +23,6 @@ Build a process to create a folder in the ACS repo with some metdata.
 ### Run the DEMO
 
 ### References
-1. https://www.activiti.org/userguide/index.html#restQueryVariable
-2. https://www.activiti.org/userguide/index.html#restExecutionsGet
-3. http://localhost:3000/activiti-app/api-explorer.html#/
+https://api-explorer.alfresco.com/api-explorer/#!/nodes/createNode
+https://community.alfresco.com/community/ecm/blog/2016/10/24/v1-rest-api-part-3-creating-nodes
+https://api-explorer.alfresco.com/api-explorer/#!/nodes/createNode
