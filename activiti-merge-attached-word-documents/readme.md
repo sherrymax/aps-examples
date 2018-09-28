@@ -24,7 +24,7 @@ Generate another document by combining the cover page and the merged documents.
     java.lang.System.out.println("***  Finished - Merge document *** ");
     ```
 
-![Javascript](Javascript.png)
+    ![Javascript](Javascript.png)
 
 6. Publish to Alfresco configuration. ![Publish](Publish.png)
 7. Publish/Deploy the App.
