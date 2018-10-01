@@ -1,7 +1,7 @@
 #### This project contains all the components required to merge the attached doc files (.doc/.docx) in a process
 
 ### Use-Case / Requirement
-The workflow should create a cover page, with the names from the attached documents. 
+The workflow should create a cover page, with the names from the attached .doc/.docx documents. 
 Store the cover page in Alfresco Content Repo. 
 Generate another document by combining the cover page and the merged documents.
 
