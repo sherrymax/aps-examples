@@ -41,3 +41,4 @@ Generate another document by combining the cover page and the merged documents.
 1. http://docs.alfresco.com/process-services1.6/topics/document_merge_bean_documentmergebean.html
 2. https://docs.alfresco.com/activiti/docs/dev-guide/1.4.0/#_document_merge_bean_documentmergebean
 3. http://docs.alfresco.com/process-services1.6/topics/document_templates.html
+4. https://docs.alfresco.com/activiti/docs/dev-guide/1.5.0/#_document_templates
