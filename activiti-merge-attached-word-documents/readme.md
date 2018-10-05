@@ -21,7 +21,6 @@ Generate another document by combining the cover page and the merged documents.
 6. Configure Endpoint in Tentant  ![Process-Configuration-4](Process-Configuration-4.png)
 7. The Generate Document configuration. ![Process-Configuration-1](Process-Configuration-1.png)
 8. Javascript code to extract info of attached documents ![Process-Configuration-5](Process-Configuration-5.png)
-    ![Process-Configuration-6](Process-Configuration-6.png)
     ```
     import groovy.json.JsonSlurper;
 
@@ -30,6 +29,7 @@ Generate another document by combining the cover page and the merged documents.
     def attachedFileNames = attachedFileList.findAll().collect{it.name};
     execution.setVariable('attachedFileNames', attachedFileNames);
     ```
+    ![Process-Configuration-6](Process-Configuration-6.png)
 9. The javascript code to merge document. 
     ```
     java.lang.System.out.println("***  Started - Merge document *** ");
