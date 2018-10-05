@@ -18,10 +18,19 @@ Generate another document by combining the cover page and the merged documents.
 3. The process flow.  ![Process-Flow](Process-Flow.png)
 4. The REST API configuration. ![Process-Configuration-2](Process-Configuration-2.png)
 5. The REST Call's Endpoint configuration.  ![Process-Configuration-3](Process-Configuration-3.png)
-5. Configure Endpoint in Tentant  ![Process-Configuration-4](Process-Configuration-4.png)
-5. The Generate Document configuration. ![Process-Configuration-1](Process-Configuration-1.png)
+6. Configure Endpoint in Tentant  ![Process-Configuration-4](Process-Configuration-4.png)
+7. The Generate Document configuration. ![Process-Configuration-1](Process-Configuration-1.png)
+8. Javascript code to extract info of attached documents ![Process-Configuration-5](Process-Configuration-5.png)
+    ![Process-Configuration-6](Process-Configuration-6.png)
+    ```
+    import groovy.json.JsonSlurper;
 
-5. The javascript code to merge document. 
+    def jsonSlurper = new JsonSlurper();
+    def attachedFileList = jsonSlurper.parseText(execution.getVariable('attachedFiles'));
+    def attachedFileNames = attachedFileList.findAll().collect{it.name};
+    execution.setVariable('attachedFileNames', attachedFileNames);
+    ```
+9. The javascript code to merge document. 
     ```
     java.lang.System.out.println("***  Started - Merge document *** ");
     documentMergeBean.mergeDocuments('coverLetterDoc;file1;file2', 'coverLetterDoc', execution);
@@ -30,8 +39,8 @@ Generate another document by combining the cover page and the merged documents.
 
     ![Javascript](Javascript.png)
 
-6. Publish to Alfresco configuration. ![Publish](Publish.png)
-7. Publish/Deploy the App.
+10. Publish to Alfresco configuration. ![Publish](Publish.png)
+11. Publish/Deploy the App.
 
 
 
