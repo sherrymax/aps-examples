@@ -16,7 +16,11 @@ Generate another document by combining the cover page and the merged documents.
 1. Setup Alfresco Activiti if you don't have one already. Instructions & help available at [Activiti Docs](http://docs.alfresco.com/activiti/docs/), [Alfresco BPM Community](https://community.alfresco.com/community/bpm)
 2. Import the ![Merge-Documents.zip](Merge-Documents.zip) app available in this project into Activiti.
 3. The process flow.  ![Process-Flow](Process-Flow.png)
-4. The process configuration. ![Process-Configuration-1](Process-Configuration-1.png)
+4. The REST API configuration. ![Process-Configuration-2](Process-Configuration-2.png)
+5. The REST Call's Endpoint configuration.  ![Process-Configuration-3](Process-Configuration-3.png)
+5. Configure Endpoint in Tentant  ![Process-Configuration-4](Process-Configuration-4.png)
+5. The Generate Document configuration. ![Process-Configuration-1](Process-Configuration-1.png)
+
 5. The javascript code to merge document. 
     ```
     java.lang.System.out.println("***  Started - Merge document *** ");
