@@ -15,6 +15,7 @@ Build a process to create a listener that listens to an event.
 1. Import the ![Event-Listener.zip](Event-Listener.zip) app available in this project into Activiti.
 2. The process flow.  ![Process-Flow](Process-Flow.png)
 3. The Request Mapping Configuration. ![Request-Mapping](Request-Mapping.png)
+   ![Human-Task-Configuration](Human-Task-Configuration.png)
    ![Request-Mapping-2](Request-Mapping-2.png)
 4. Code Snippet. ![Code-Snippet](Java-Code.png)
 4. Source Code. ![Source-Code](activiti-extension-event-listener-java-code.zip)
