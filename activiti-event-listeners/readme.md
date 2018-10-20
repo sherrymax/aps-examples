@@ -1,4 +1,4 @@
-#### The project contains all the components required to create an ACS folder from APS via REST calls
+#### The project contains all the components required to create an APS Event Listener
 
 ### Use-Case / Requirement
 Build a process to create a listener that listens to an event.

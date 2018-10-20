@@ -1,4 +1,4 @@
-#### The project contains all the components required to create an ACS folder from APS via REST calls
+#### The project contains all the components required to create an APS task Listener
 
 ### Use-Case / Requirement
 Build a process to create a listener that listens to a task.
@@ -15,7 +15,7 @@ Build a process to create a listener that listens to a task.
 1. Import the ![Task-Listener.zip](Task-Listener.zip) app available in this project into Activiti.
 2. Process Flow.  ![Process-Flow](Process-Flow.png)
 3. Task Configuration.   ![Human-Task-Configuration](Human-Task-Configuration.png)
-4. Task Listener Configuration in Task. ![Request-Mapping-2](Request-Mapping-2.png)
+4. Task Listener Configuration in Task. ![Request-Mapping](Request-Mapping.png)
 5. Code Snippet. ![Code-Snippet](Java-Code.png)
 6. Source Code. ![Source-Code](activiti-extension-task-listener-java-code.zip)
 7. The JAR File. ![Task-Listener.jar](activiti-extension-task-listener-jar-1.0-SNAPSHOT.jar)
