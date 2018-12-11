@@ -12,8 +12,8 @@ Generate another document by combining the cover page and the merged documents.
 
 ## Configuration Steps
 
-### Activiti Setup and Process Deployment
-1. Setup Alfresco Activiti if you don't have one already. Instructions & help available at [Activiti Docs](http://docs.alfresco.com/activiti/docs/), [Alfresco BPM Community](https://community.alfresco.com/community/bpm)
+### APS Setup and Process Deployment
+1. Setup APS if you don't have one already. Instructions & help available at [APS Docs](http://docs.alfresco.com/activiti/docs/), [Alfresco BPM Community](https://community.alfresco.com/community/bpm)
 2. Import the ![Merge-Documents.zip](Merge-Documents.zip) app available in this project into Activiti.
 3. The process flow.  ![Process-Flow](Process-Flow.png)
 4. The REST API configuration. ![Process-Configuration-2](Process-Configuration-2.png)
