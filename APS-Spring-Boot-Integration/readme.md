@@ -5,3 +5,4 @@ Command :  ngrok http localhost:8083
 Result : Forwarding http://c58d0cb7.ngrok.io -> localhost:8083
 Final Action : Use http://c58d0cb7.ngrok.io as hostnames in REST API Endpoints.
 ```
+![Endpoint](Endpoint.png)
