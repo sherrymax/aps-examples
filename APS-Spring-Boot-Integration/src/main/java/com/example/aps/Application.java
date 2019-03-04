@@ -46,7 +46,7 @@ public class Application {
 	private Environment env;
 
 	public static void main(String args[]) {
-		SpringApplication.run(Application.class);
+		SpringApplication.run(Application.class, args);
 	}
 
 	@Bean
@@ -79,7 +79,7 @@ public class Application {
 
 		try {
 			APSInstance myResponse = restTemplate.postForObject(this.processInstancesUrl, requestEntity, APSInstance.class);
-			System.out.println("Creaeted Instance ID : " + myResponse.getId());
+			System.out.println("Created Instance ID : " + myResponse.getId());
 		} catch (HttpServerErrorException errorException) {
 			System.out.println(">>>ERROR<<< " + errorException.getResponseBodyAsString());
 		} catch (Exception ex) {
