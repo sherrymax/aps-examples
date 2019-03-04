@@ -8,7 +8,6 @@ import com.fasterxml.jackson.databind.ObjectMapper;
 
 import java.io.IOException;
 import java.util.HashMap;
-import java.util.List;
 import java.util.Map;
 
 import org.slf4j.Logger;
@@ -27,9 +26,6 @@ import org.springframework.http.ResponseEntity;
 import org.springframework.web.client.HttpServerErrorException;
 import org.springframework.web.client.RestClientResponseException;
 import org.springframework.web.client.RestTemplate;
-import org.springframework.beans.factory.annotation.Autowired;
-
-
 
 @SpringBootApplication
 public class Application {
@@ -41,7 +37,7 @@ public class Application {
 	private String processDefinitionsUrl;
 	private APSInstanceVariable[] processInitialValues;
 	private RestTemplate restTemplate;
-	
+
 	@Autowired
 	private Environment env;
 
@@ -62,14 +58,16 @@ public class Application {
 			this.createProcessInstance();
 		};
 	}
-	
+
 	private void createProcessInstance() {
 		this.getProcessInstancesUrl();
 		this.getprocessInitialValues();
 		RestTemplate restTemplate = this.getRestTemplate();
 
-		APSInstanceSearch apsInstanceSearch = new APSInstanceSearch(this.processDefinitionID, this.processInitialValues);
-//		APSInstanceSearch apsInstanceSearch = new APSInstanceSearch(this.processDefinitionID);
+		APSInstanceSearch apsInstanceSearch = new APSInstanceSearch(this.processDefinitionID,
+				this.processInitialValues);
+		// APSInstanceSearch apsInstanceSearch = new
+		// APSInstanceSearch(this.processDefinitionID);
 
 		HttpHeaders headers = new HttpHeaders();
 		headers.set("Accept", this.getJSONAcceptType());
@@ -78,7 +76,8 @@ public class Application {
 		HttpEntity<APSInstanceSearch> requestEntity = new HttpEntity<>(apsInstanceSearch, headers);
 
 		try {
-			APSInstance myResponse = restTemplate.postForObject(this.processInstancesUrl, requestEntity, APSInstance.class);
+			APSInstance myResponse = restTemplate.postForObject(this.processInstancesUrl, requestEntity,
+					APSInstance.class);
 			System.out.println("Created Instance ID : " + myResponse.getId());
 		} catch (HttpServerErrorException errorException) {
 			System.out.println(">>>ERROR<<< " + errorException.getResponseBodyAsString());
@@ -87,7 +86,7 @@ public class Application {
 			System.out.println("^^^ ERROR ^^^ " + ((RestClientResponseException) ex).getResponseBodyAsString());
 		}
 	}
-	
+
 	private void getProcessDefinitionID() {
 		this.setProcessDefinitionName();
 		RestTemplate restTemplate = this.getRestTemplate();
@@ -107,11 +106,12 @@ public class Application {
 					processDefinitionRequestHTTPEntity, APSResponse.class, params);
 
 			if (myResponse.getStatusCodeValue() == 200) {
-				
+
 				for (int i = 0; i < myResponse.getBody().getData().length; i++) {
 					if (myResponse.getBody().getData()[i].getName().equals(this.getProcessDefinitionName())) {
 						this.processDefinitionID = myResponse.getBody().getData()[i].getId();
-						System.out.println("Process Definition : Name : " + this.getProcessDefinitionName() + " : ID : " + this.processDefinitionID);
+						System.out.println("Process Definition : Name : " + this.getProcessDefinitionName() + " : ID : "
+								+ this.processDefinitionID);
 					}
 				}
 			}
@@ -122,33 +122,41 @@ public class Application {
 			System.out.println(ex.getMessage());
 			System.out.println("^^^ ERROR ^^^ " + ((RestClientResponseException) ex).getResponseBodyAsString());
 		}
-		
+
 	}
-	
+
 	private void setProcessDefinitionName() {
 		this.processDefinitionName = env.getProperty("aps.processDefinitionName");
 	}
+
 	private String getProcessDefinitionName() {
 		return this.processDefinitionName;
 	}
+
 	private void setRestTemplate(RestTemplate restTemplate) {
 		this.restTemplate = restTemplate;
 	}
+
 	private RestTemplate getRestTemplate() {
 		return this.restTemplate;
 	}
+
 	private void getProcessInstancesUrl() {
 		this.processInstancesUrl = env.getProperty("aps.processInstancesUrl");
 	}
+
 	private void getprocessDefinitionsUrl() {
 		this.processDefinitionsUrl = env.getProperty("aps.processDefinitionsUrl");
 	}
+
 	private void getprocessInitialValues() {
 		String processInitialValuesJSON = env.getProperty("aps.processInitialValues");
 		ObjectMapper mapper = new ObjectMapper();
 
 		try {
-			APSInstanceVariable[] participantJsonList = mapper.readValue(processInitialValuesJSON, new TypeReference<APSInstanceVariable[]>(){});
+			APSInstanceVariable[] participantJsonList = mapper.readValue(processInitialValuesJSON,
+					new TypeReference<APSInstanceVariable[]>() {
+					});
 			this.processInitialValues = participantJsonList;
 		} catch (JsonParseException e) {
 			// TODO Auto-generated catch block
@@ -162,17 +170,22 @@ public class Application {
 		}
 
 	}
+
 	private String getUserName() {
 		return env.getProperty("aps.username");
 	}
+
 	private String getPassword() {
 		return env.getProperty("aps.password");
 	}
+
 	private String getAuthToken() {
-		String credentials = this.getUserName()+":"+this.getPassword();
-		return "Basic "+java.util.Base64.getEncoder().encodeToString((credentials).getBytes());
+		String credentials = this.getUserName() + ":" + this.getPassword();
+		return "Basic " + java.util.Base64.getEncoder().encodeToString((credentials).getBytes());
 	}
+
 	private String getJSONAcceptType() {
 		return "application/json";
 	}
+
 }
