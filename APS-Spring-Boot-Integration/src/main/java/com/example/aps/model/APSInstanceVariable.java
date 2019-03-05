@@ -8,6 +8,17 @@ public class APSInstanceVariable {
 	private String value;
 	
 	
+	
+	public APSInstanceVariable() {
+		super();
+	}
+
+	public APSInstanceVariable(String name, String type, String value) {
+		this.name = name;
+		this.type = type;
+		this.value = value;
+	}
+	
 	public String getName() {
 		return name;
 	}

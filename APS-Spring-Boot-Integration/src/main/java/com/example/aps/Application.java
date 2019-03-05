@@ -7,7 +7,9 @@ import com.fasterxml.jackson.databind.JsonMappingException;
 import com.fasterxml.jackson.databind.ObjectMapper;
 
 import java.io.IOException;
+import java.util.ArrayList;
 import java.util.HashMap;
+import java.util.List;
 import java.util.Map;
 
 import org.slf4j.Logger;
@@ -63,11 +65,9 @@ public class Application {
 		this.getProcessInstancesUrl();
 		this.getprocessInitialValues();
 		RestTemplate restTemplate = this.getRestTemplate();
-
-		APSInstanceSearch apsInstanceSearch = new APSInstanceSearch(this.processDefinitionID,
-				this.processInitialValues);
-		// APSInstanceSearch apsInstanceSearch = new
-		// APSInstanceSearch(this.processDefinitionID);
+		
+		APSInstanceSearch apsInstanceSearch = new APSInstanceSearch(this.processDefinitionID, this.processInitialValues);
+		// APSInstanceSearch apsInstanceSearch = new APSInstanceSearch(this.processDefinitionID);
 
 		HttpHeaders headers = new HttpHeaders();
 		headers.set("Accept", this.getJSONAcceptType());
@@ -149,7 +149,7 @@ public class Application {
 		this.processDefinitionsUrl = env.getProperty("aps.processDefinitionsUrl");
 	}
 
-	private void getprocessInitialValues() {
+	private void getprocessInitialValues_from_properties_file() {
 		String processInitialValuesJSON = env.getProperty("aps.processInitialValues");
 		ObjectMapper mapper = new ObjectMapper();
 
@@ -170,6 +170,22 @@ public class Application {
 		}
 
 	}
+	
+	private void getprocessInitialValues() {
+			
+		List<APSInstanceVariable> variablesList = new ArrayList<APSInstanceVariable>();
+		variablesList.add(new APSInstanceVariable("firstName", "String", "John"));
+		variablesList.add(new APSInstanceVariable("lastName", "String", "Smith"));
+		variablesList.add(new APSInstanceVariable("applicationStartedFrom", "String", "Test"));
+		
+		this.processInitialValues = new APSInstanceVariable[variablesList.size()];
+		for(int i=0; i<variablesList.size(); i++) {
+			this.processInitialValues[i] = variablesList.get(i);
+		}
+			
+	}
+	
+	
 
 	private String getUserName() {
 		return env.getProperty("aps.username");
