@@ -12,14 +12,14 @@ Build a process to create a listener that listens to an execution.
 ## Configuration Steps
 
 ### Activiti Setup and Process Deployment
-1. Import the ![Execution-Listener.zip](Execution-Listener.zip) app available in this project into Activiti.
+1. Import the [Execution-Listener.zip](Execution-Listener.zip) app available in this project into Activiti.
 2. Process Flow.  ![Process-Flow](Process-Flow.png)
 3. Execution Listener Configuration in Process. ![Request-Mapping](Request-Mapping.png)
 4. Task Configuration.   ![Human-Task-Configuration](Human-Task-Configuration.png)
 5. Execution Listener Configuration in Task. ![Request-Mapping-2](Request-Mapping-2.png)
 6. Code Snippet. ![Code-Snippet](Java-Code.png)
-7. Source Code. ![Source-Code](activiti-extension-execution-listener-java-code.zip)
-8. The JAR File. ![Execution-Listener.jar](activiti-extension-execution-listener-jar-1.0-SNAPSHOT.jar)
+7. Source Code. [Source-Code](activiti-extension-execution-listener-java-code.zip)
+8. The JAR File. [Execution-Listener.jar](activiti-extension-execution-listener-jar-1.0-SNAPSHOT.jar)
 9. Copy the jar file to tomcat-lib location. [eg: /usr/local/tomcat/webapps/activiti-app/WEB-INF/lib/]
 10. Publish/Deploy the APS App.
 

@@ -13,7 +13,7 @@ A serial approval pipeline process with two-levels. The tasks approved by first-
 
 ### Activiti Setup and Process Deployment
 1. Setup Alfresco Activiti if you don't have one already. Instructions & help available at [Activiti Docs](http://docs.alfresco.com/activiti/docs/), [Alfresco BPM Community](https://community.alfresco.com/community/bpm)
-2. Import the ![Save-Face-SME.zip](Save-Face-SME.zip) app available in this project into Activiti.
+2. Import the [Save-Face-SME.zip](Save-Face-SME.zip) app available in this project into Activiti.
 3. The process flow.  ![Process-Flow](Process-Flow.png)
 4. The process configuration. ![Process-Configuration](Process-Configuration.png)
 5. The boundary signal event. ![Signal-Boundary-Event](Signal-Boundary-Event.png)
@@ -38,13 +38,13 @@ If necessary, the value of Execution ID can be cross-verified by querying the DB
 http://<hostname>:<port>/activiti-app/api/runtime/executions/<execution-id-of-boundary-signal-event>?tenantId=<tenantId>
 ```
 The header of PUT call is as follows:
-```
+```javascript
 Authorization = Basic xxxxxxxxxxxxxxx
 cache-control = no-cache
 content-type = application/json
 ```
 The body of the PUT call is as follows: 
-```
+```json
 {
 "action":"signalEventReceived",
 "signalName":"saveFaceSignal"

@@ -12,7 +12,7 @@ A serial approval pipeline process with two-levels. The tasks approved by first-
 ## Configuration Steps
 
 ### Activiti Setup and Process Deployment
-1. Import the ![Save-Face-BME.zip](Save-Face-BME.zip) app available in this project into Activiti.
+1. Import the [Save-Face-BME.zip](Save-Face-BME.zip) app available in this project into Activiti.
 2. The process flow.  ![Process-Flow](Process-Flow.png)
 3. The process configuration. ![Process-Configuration](Process-Configuration.png)
 4. The boundary message event. ![Message-Boundary-Event](Message-Boundary-Event.png)
@@ -37,13 +37,13 @@ If necessary, the value of Execution ID can be cross-verified by querying the DB
 http://<hostname>:<port>/activiti-app/api/runtime/executions/<execution-id-of-boundar-message-event>?tenantId=<tenantId>
 ```
 The header of PUT call is as follows:
-```
+```javascript
 Authorization = Basic xxxxxxxxxxxxxxx
 cache-control = no-cache
 content-type = application/json
 ```
 The body of the PUT call is as follows: 
-```
+```json
 {
 "action":"messageEventReceived",
 "messageName":"saveFaceMessage"

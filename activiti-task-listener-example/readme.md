@@ -12,13 +12,13 @@ Build a process to create a listener that listens to a task.
 ## Configuration Steps
 
 ### Activiti Setup and Process Deployment
-1. Import the ![Task-Listener.zip](Task-Listener.zip) app available in this project into Activiti.
+1. Import the [Task-Listener.zip](Task-Listener.zip) app available in this project into Activiti.
 2. Process Flow.  ![Process-Flow](Process-Flow.png)
 3. Task Configuration.   ![Human-Task-Configuration](Human-Task-Configuration.png)
 4. Task Listener Configuration in Task. ![Request-Mapping](Request-Mapping.png)
 5. Code Snippet. ![Code-Snippet](Java-Code.png)
-6. Source Code. ![Source-Code](activiti-extension-task-listener-java-code.zip)
-7. The JAR File. ![Task-Listener.jar](activiti-extension-task-listener-jar-1.0-SNAPSHOT.jar)
+6. Source Code. [Source-Code](activiti-extension-task-listener-java-code.zip)
+7. The JAR File. [Task-Listener.jar](activiti-extension-task-listener-jar-1.0-SNAPSHOT.jar)
 8. Copy the jar file to tomcat-lib location. [eg: /usr/local/tomcat/webapps/activiti-app/WEB-INF/lib/]
 9. Publish/Deploy the APS App.
 
