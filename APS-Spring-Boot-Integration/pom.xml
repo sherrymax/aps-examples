@@ -6,7 +6,7 @@
 	<groupId>com.example.aps</groupId>
 	<artifactId>aps-spring-boot-integration</artifactId>
 	<version>0.0.1-SNAPSHOT</version>
-	<name>APS-Spring-Boot-Integration</name>
+	<name>aps-spring-boot-integration</name>
 	<description>APS Spring Boot Integration</description>
 
 	<properties>
