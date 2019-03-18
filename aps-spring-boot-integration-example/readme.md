@@ -26,8 +26,11 @@ Foolowing is the design to accomplish the requirements.
 <!-- 6. The JAR File. ![Copy-attachments.jar](activiti-copy-attachments-1.0.0-SNAPSHOT.jar) -->
 <!-- 7. Copy the jar file to tomcat-lib location. [eg: /usr/local/tomcat/webapps/activiti-app/WEB-INF/lib/] -->
 6. Publish/Deploy the APS App.
-7. Run as 'Spring Boot App' ![Run-As-Spring-Boot-App](Run-As-Spring-Boot-App.png)
-   
+7. Run as 'Spring Boot App' ![Run-As-Spring-Boot-App-In-Eclipse](Run-As-Spring-Boot-App.png)
+
+### Java Code
+The Java code is available ![here](java-code)
+
 ### Run the DEMO
 
 ### References
