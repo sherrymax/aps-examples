@@ -18,6 +18,12 @@ Build a process to copy attachments that are uploaded in a child process to its 
 4. Task Listener Configuration in Task. ![Task-Listener-Configuration-1](Task-Listener-Configuration-1.png)![Task-Listener-Configuration-2](Task-Listener-Configuration-2.png)
 5. Task Listener Code Snippet. 
    ```
+    /**
+    * This task listener copies the "supportingfiles" field's attachments in subprocess/child
+    * process instance to a new attachment field "supportingfiles" in the
+    * parent task.
+    */
+
     package com.activiti.extension.bean;
 
     import java.util.ArrayList;
@@ -44,11 +50,7 @@ Build a process to copy attachments that are uploaded in a child process to its 
     @Component("copyAttachmentFromChildToParentTaskListener")
     public class CopyAttachmentFromChildToParentTaskListener implements TaskListener {
 
-        /**
-        * This task listener copies the "supportingfiles" field's attachments in subprocess/child
-        * process instance to a new attachment field "supportingfiles" in the
-        * parent task.
-        */
+        
         private static final long serialVersionUID = 1L;
         
         private Expression sourceField;
