@@ -19,14 +19,14 @@ Foolowing is the design to accomplish the requirements.
 
 ### Activiti Setup and Process Deployment
 1. Import the [aps-application.zip](aps-application.zip) app available in this project into Activiti.
-2. Process Flow. [Process-Flow-1](Process-Flow-1.png) 
-3. REST Configuration.   [REST-Configuration-1](REST-Configuration-1.png)  [REST-Configuration-2](REST-Configuration-2.png) [REST-Configuration-3](REST-Configuration-3.png)
-4. Script Configuration. [Script-Configuration-1](Script-Configuration-1.png)[Script-Configuration-2](Script-Configuration-2.png)
+2. Process Flow. ![Process-Flow-1](Process-Flow-1.png) 
+3. REST Configuration.   ![REST-Configuration-1](REST-Configuration-1.png)  ![REST-Configuration-2](REST-Configuration-2.png) ![REST-Configuration-3](REST-Configuration-3.png)
+4. Script Configuration. ![Script-Configuration-1](Script-Configuration-1.png)![Script-Configuration-2](Script-Configuration-2.png)
 5. Java Source Code. [Source-Code](aps-spring-boot-integration.zip)
 <!-- 6. The JAR File. [Copy-attachments.jar](activiti-copy-attachments-1.0.0-SNAPSHOT.jar) -->
 <!-- 7. Copy the jar file to tomcat-lib location. [eg: /usr/local/tomcat/webapps/activiti-app/WEB-INF/lib/] -->
 6. Publish/Deploy the APS App.
-7. Run as 'Spring Boot App' [Run-As-Spring-Boot-App-In-Eclipse](Run-As-Spring-Boot-App.png)
+7. Run as 'Spring Boot App' ![Run-As-Spring-Boot-App-In-Eclipse](Run-As-Spring-Boot-App.png)
 
 ### Java Code
 The Java code is available [here](java-code)
