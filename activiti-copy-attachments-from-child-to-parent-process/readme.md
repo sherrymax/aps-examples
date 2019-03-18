@@ -12,17 +12,17 @@ Build a process using Call Activity to copy attachments that are uploaded in a c
 ## Configuration Steps
 
 ### Activiti Setup and Process Deployment
-1. Import the ![Call-Activity-Tester.zip](Call-Activity-Tester.zip) app available in this project into Activiti.
-2. Process Flow. ![Process-Flow-1](Process-Flow-1.png) ![Process-Flow-2](Process-Flow-2.png)
-3. Call Activity Configuration.   ![Call-Activity-Configuration-1](Call-Activity-Configuration-1.png)  ![Call-Activity-Configuration-2](Call-Activity-Configuration-2.png)
-4. Task Listener Configuration in Task. ![Task-Listener-Configuration-1](Task-Listener-Configuration-1.png)![Task-Listener-Configuration-2](Task-Listener-Configuration-2.png)
-5. Source Code. ![Source-Code](activiti-copy-attachments-java-code.zip)
-6. The JAR File. ![Copy-attachments.jar](activiti-copy-attachments-1.0.0-SNAPSHOT.jar)
+1. Import the [Call-Activity-Tester.zip](Call-Activity-Tester.zip) app available in this project into Activiti.
+2. Process Flow. [Process-Flow-1](Process-Flow-1.png) [Process-Flow-2](Process-Flow-2.png)
+3. Call Activity Configuration.   [Call-Activity-Configuration-1](Call-Activity-Configuration-1.png)  [Call-Activity-Configuration-2](Call-Activity-Configuration-2.png)
+4. Task Listener Configuration in Task. [Task-Listener-Configuration-1](Task-Listener-Configuration-1.png)[Task-Listener-Configuration-2](Task-Listener-Configuration-2.png)
+5. Source Code. [Source-Code](activiti-copy-attachments-java-code.zip)
+6. The JAR File. [Copy-attachments.jar](activiti-copy-attachments-1.0.0-SNAPSHOT.jar)
 7. Copy the jar file to tomcat-lib location. [eg: /usr/local/tomcat/webapps/activiti-app/WEB-INF/lib/]
 8. Publish/Deploy the APS App.
    
 ### Task Listener Code Script
-   ```
+   ```java
     /**
     * This task listener copies the "supportingfiles" field's attachments in subprocess/child
     * process instance to a new attachment field "supportingfiles" in the
