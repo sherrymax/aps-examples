@@ -1,4 +1,4 @@
-#### The project contains all the components required to copy attachments from child to parent process if Call Activity is used
+#### The project contains all the components required to copy attachments from child to parent process using Call Activity
 
 ### Use-Case / Requirement
 Build a process using Call Activity to copy attachments that are uploaded in a child process to its parent process.
