@@ -63,3 +63,6 @@ Build a process to create a folder in the ACS repo with some metdata.
    3. Invoking points in APS will be `groupServiceImpl`.
    4. In APS, this service is available as ` List<Group> groups = groupServiceImpl.getGroupByNameAndTenantId('FBIAnalyst', 1L);`
 
+### References
+1. http://docs.alfresco.com/activiti/docs/user-guide/1.5.0/
+2. http://docs.alfresco.com/activiti/docs/user-guide/1.5.0/#_assigning_tasks
