@@ -56,10 +56,10 @@ Build a process to create a folder in the ACS repo with some metdata.
 3. The UserServiceImpl.java implementation file has a `@Service` name. 
    1. So invoking points in APS will be the value of `@Service`.
    2. eg: UserServiceImpl.java has the service name as `@Service("userService")`. 
-   3. So, in APS, this service is available as ` List<User> users = userService.getAllUsers(0,999,tenantId);`
+   3. In APS, this service is available as ` List<User> users = userService.getAllUsers(0,999,tenantId);`
 4. The GroupServiceImpl.java implementation file does not have a `@Service` name. 
-   1. So invoking points in APS will be `GroupServiceImpl`.
-   2. No service name is mentioned in `@Service` of GroupServiceImpl.java. 
-   3. Since service name is empty, the implementation file's name, with first letter in lower case, is assigned as default service name.
-   4. So, in APS, this service is available as ` List<Group> groups = groupServiceImpl.getGroupByNameAndTenantId('FBIAnalyst', 1L);`
+   1. No service name is mentioned in `@Service` of GroupServiceImpl.java. 
+   2. Since service name is empty, the implementation file's name, with first letter in lower case, is assigned as default service name.
+   3. Invoking points in APS will be `groupServiceImpl`.
+   4. In APS, this service is available as ` List<Group> groups = groupServiceImpl.getGroupByNameAndTenantId('FBIAnalyst', 1L);`
 
