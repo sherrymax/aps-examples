@@ -1,7 +1,7 @@
-#### The project contains all the components required to create an ACS folder from APS via REST calls
+#### The project contains all the components required to assign an APS human task to one or more groups.
 
 ### Use-Case / Requirement
-Build a process to create a folder in the ACS repo with some metdata.
+Build a process to select a `Reviewer group` and assign the `Review Task` to that selected `Reviewer group`.
 
 
 ### Prerequisites to run this demo end-2-end
