@@ -7,13 +7,18 @@ Before defining a data model, you must establish a database connection and regis
 In the Identity Management app, click Tenants > Data sources.
 Click + (plus icon) and configure the following settings (see the activiti-app.properties file for more details):
 
-## Oracle DB
+### Data Source configuration of following DBs are given below
+1. [Oracle](#oracle)
+2. [MySQL](#mysql)
+3. [PostGreSQL](#postgresql)
+
+## <a name="oracle"></a>Oracle DB
 ![Oracle](oracle.png)
 
-## MySQL DB
+## <a name="mysql"></a>MySQL DB
 ![MySQL](mysql.png)
 
-## PostGresSQL DB
+## <a name="postgresql"></a>PostGreSQL DB
 ![Postgres](postgresdb.png)
 
 ### References
