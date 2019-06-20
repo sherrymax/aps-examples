@@ -13,7 +13,7 @@ Build a process to create an integration to Oracle Database that serves the purp
 ## Configuration Steps
 
 ### Create the AWS RDS Oracle DB
-Follow the steps per AWS Documentation to create and AWS Oracle RDS
+Follow the steps per [AWS Documentation](https://docs.aws.amazon.com/AmazonRDS/latest/UserGuide/CHAP_GettingStarted.CreatingConnecting.Oracle.html) to create and AWS Oracle RDS
 ![rds](rds.png)
 
 ### Connect to the AWS RDS Oracle DB using SQL Developer
@@ -44,3 +44,4 @@ Follow the steps per AWS Documentation to create and AWS Oracle RDS
 2. http://docs.alfresco.com/activiti/docs/user-guide/1.5.0/#_connecting_your_data_model_to_a_relational_database
 3. https://oskar.idashboards.com/hc/en-us/articles/227499107-Amazon-RDS-Oracle-Data-Source
 4. https://medium.com/skillhive/spring-boot-spring-data-jpa-and-oracle-database-c4af89f727e0
+5. https://docs.aws.amazon.com/AmazonRDS/latest/UserGuide/CHAP_GettingStarted.CreatingConnecting.Oracle.html
