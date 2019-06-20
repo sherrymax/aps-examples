@@ -14,7 +14,7 @@ Click + (plus icon) and configure the following settings (see the activiti-app.p
 ![MySQL](mysql.png)
 
 ## PostGresSQL DB
-![postgres](postgres.png)
+![Postgres](postgresdb.png)
 
 ### References
 1. http://docs.alfresco.com/activiti/docs/user-guide/1.5.0/
