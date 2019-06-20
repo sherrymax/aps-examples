@@ -23,7 +23,7 @@ Follow the steps per AWS Documentation to create and AWS Oracle RDS
 1. Download the ojdbc7.jar file from [Oracle site](http://www.oracle.com/technetwork/database/features/jdbc/jdbc-drivers-12c-download-1958347.html)
 2. Copy the ojdbc7.jar to tomcat/lib location of APS server. eg: /usr/share/tomcat/lib/ojdbc7.jar
 3. Restart APS
-4. Create data source using the values mentioned in [APS article](https://github.com/sherrymax/aps-examples/tree/master/aps-custom-database-integration)
+4. Create data source using the values mentioned in [APS article](https://github.com/sherrymax/aps-examples/tree/master/aps-custom-database-integration#oracle)
 5.   ![oracle](oracle.png)
 
 
