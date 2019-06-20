@@ -1,4 +1,4 @@
-#### The project contains all the components required to create an integration to an AWS Oracle RDS
+#### The project contains all the components required to create an integration to an Enterprise System Of Records (AWS Oracle RDS)
 
 ### Use-Case / Requirement
 Build a process to create an integration to Oracle Database that serves the purpose of Enterprise System Of Records.
@@ -14,30 +14,30 @@ Build a process to create an integration to Oracle Database that serves the purp
 
 ### Create the AWS RDS Oracle DB
 Follow the steps per AWS Documentation to create and AWS Oracle RDS
-[rds.png](rds.png)
+![rds](rds.png)
 
 ### Connect to the AWS RDS Oracle DB using SQL Developer
-[sqldeveloper.png](sqldeveloper.png)
+![sqldeveloper](sqldeveloper.png)
 
 ### Create datasource for AWS RDS Oracle DB in APS
 1. Download the ojdbc7.jar file from [Oracle site](http://www.oracle.com/technetwork/database/features/jdbc/jdbc-drivers-12c-download-1958347.html)
 2. Copy the ojdbc7.jar to tomcat/lib location of APS server. eg: /usr/share/tomcat/lib/ojdbc7.jar
 3. Restart APS
 4. Create data source using the values mentioned in [APS article](https://github.com/sherrymax/aps-examples/tree/master/aps-custom-database-integration)
-5.   [oracle.png](oracle.png)
+5.   ![oracle](oracle.png)
 
 
 ### Activiti Setup and Process Deployment
 1. Import the [Oracle-Database-Operations.zip](Oracle-Database-Operations.zip) app available in this project into Activiti.
 2. Process Flow.  ![Process-Flow](Process-Flow.png)
-3. Data Model Configuration in Application. ![Data-Model-App-Configuration](Data-Model-App-Configuration.png)
-4. Data Model Configuration in Process.   ![Data-Model-DB-Configuration](Data-Model-DB-Configuration.png)
+3. Data Model Configuration in Process. ![Data-Model-App-Configuration](Data-Model-App-Configuration.png)
+4. Data Model Configuration in Application.   ![Data-Model-DB-Configuration](Data-Model-DB-Configuration.png)
 5. Publish/Deploy the APS App.
 
 
 ### Run the DEMO
-1. Verify the data entered through the APS form: [Runtime-APS-Form](Runtime-APS-Form.png)
-1. Verify the data in AWS RDS Oracle Database using SQL Developer: [Runtime-DB](Runtime-DB.png)
+1. Verify the data entered through the APS form: ![Runtime-APS-Form](Runtime-APS-Form.png)
+1. Verify the data in AWS RDS Oracle Database using SQL Developer: ![Runtime-DB](Runtime-DB.png)
 
 ### References
 1. http://docs.alfresco.com/activiti/docs/user-guide/1.5.0/
