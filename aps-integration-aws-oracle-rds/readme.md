@@ -24,6 +24,11 @@ Follow the steps per [AWS Documentation](https://docs.aws.amazon.com/AmazonRDS/l
 2. Copy the ojdbc7.jar to tomcat/lib location of APS server. eg: /usr/share/tomcat/lib/ojdbc7.jar
 3. Restart APS
 4. Create data source using the values mentioned in [APS article](https://github.com/sherrymax/aps-examples/tree/master/aps-custom-database-integration#oracle)
+5. Name : aps-custom-oracle-db
+6. JDBC URL : jdbc:oracle:thin:@//<end-point>:<port-number>/ORCL
+7. Driver Class : oracle.jdbc.driver.OracleDriver
+8. User Name : <db-username>
+9. Password : <db-password>
    ![oracle](oracle.png)
 
 
