@@ -13,7 +13,7 @@ Build a process to create an integration to Oracle Database that serves the purp
 ## Configuration Steps
 
 ### Create the AWS RDS Oracle DB
-Follow the steps per [AWS Documentation](https://docs.aws.amazon.com/AmazonRDS/latest/UserGuide/CHAP_GettingStarted.CreatingConnecting.Oracle.html) to create and AWS Oracle RDS
+Follow the steps per [AWS Documentation](https://docs.aws.amazon.com/AmazonRDS/latest/UserGuide/CHAP_GettingStarted.CreatingConnecting.Oracle.html) to create an [AWS Oracle RDS](https://aws.amazon.com/rds/oracle/)
 ![rds](rds.png)
 
 ### Connect to the AWS RDS Oracle DB using SQL Developer
