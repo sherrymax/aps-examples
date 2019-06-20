@@ -1,7 +1,7 @@
 #### The project contains all the components required to create an integration to an Enterprise System Of Records (AWS Oracle RDS)
 
 ### Use-Case / Requirement
-Build a process to create an integration to Oracle Database that serves the purpose of Enterprise System Of Records.
+Build a process to create an integration to Oracle Database that serves the purpose of [Enterprise System Of Records](https://en.wikipedia.org/wiki/System_of_record).
 
 
 ### Prerequisites to run this demo end-2-end
