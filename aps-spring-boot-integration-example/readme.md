@@ -6,7 +6,7 @@ A Java Spring Boot application should be integrated with APS and should have the
 2. The invoked process instance should return values to the Spring Boot Application at any point of its life span.
 
 ### Design
-Foolowing is the design to accomplish the requirements. 
+Following is the design to accomplish the requirements. 
 1. The APS Process Instance is invoked from Spring Boot App by using the APS-REST API Calls. 
 2. A REST API service is built using the Spring Boot App. This REST service is invoked from APS and values are passed.
 
