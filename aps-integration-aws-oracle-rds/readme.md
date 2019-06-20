@@ -25,10 +25,10 @@ Follow the steps per [AWS Documentation](https://docs.aws.amazon.com/AmazonRDS/l
 3. Restart APS
 4. Create data source using the values mentioned in [APS article](https://github.com/sherrymax/aps-examples/tree/master/aps-custom-database-integration#oracle)
 5. Name : aps-custom-oracle-db
-6. JDBC URL : jdbc:oracle:thin:@//<end-point>:<port-number>/ORCL
+6. JDBC URL : jdbc:oracle:thin:@//<i>end-point</i>:<i>port-number</i>/ORCL
 7. Driver Class : oracle.jdbc.driver.OracleDriver
-8. User Name : <db-username>
-9. Password : <db-password>
+8. User Name : <i>db-username</i>
+9. Password : <i>db-password</i>
    ![oracle](oracle.png)
 
 
