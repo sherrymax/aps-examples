@@ -27,11 +27,11 @@ Follow the steps per [AWS Documentation](https://docs.aws.amazon.com/AmazonRDS/l
 5. ![oracle](oracle.png)
 
    ```
-6. Name : aps-custom-oracle-db
-7. JDBC URL : jdbc:oracle:thin:@//<i>aws-db-end-point</i>:<i>port-number</i>/ORCL
-8. Driver Class : oracle.jdbc.driver.OracleDriver
-9. User Name : <i>db-username</i>
-10. Password : <i>db-password</i>
+    Name : aps-custom-oracle-db
+    JDBC URL : jdbc:oracle:thin:@//<i>aws-db-end-point</i>:<i>port-number</i>/ORCL
+    Driver Class : oracle.jdbc.driver.OracleDriver
+    User Name : <i>db-username</i>
+    Password : <i>db-password</i>
     ```
 
 
