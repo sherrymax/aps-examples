@@ -24,3 +24,4 @@ Click + (plus icon) and configure the following settings (see the activiti-app.p
 ### References
 1. http://docs.alfresco.com/activiti/docs/user-guide/1.5.0/
 2. http://docs.alfresco.com/activiti/docs/user-guide/1.5.0/#_connecting_your_data_model_to_a_relational_database
+3. https://docs.alfresco.com/process-services1.7/topics/databaseConfiguration.html
