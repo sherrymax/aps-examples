@@ -23,7 +23,7 @@ Build a process :
 7. Aspect ![Aspect](Aspect.png)
 8. Aspect Properties![Aspect-Properties](Aspect-Properties.png)
 9. Map the aspects between APS and ACS. ![Aspect-Mapping](Aspect-Mapping.png)
-10. Map the aspect properties between APS and ACS. ![Properties-Mapping](Properties-Mapping.png)
+10. Map the aspect properties between APS and ACS. ![All-Properties-Mapping](All-Properties-Mapping.png)
 11. Publish/Deploy the APS App.
 
 ### Run the DEMO
