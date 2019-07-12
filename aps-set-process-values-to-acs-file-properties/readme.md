@@ -21,8 +21,8 @@ Build a process :
 5. Publish Task : Properties Configuration ![Publish-Task-Configuration-Props-Mapping](Publish-Task-Configuration-Props-Mapping.png)
 6. Create Data Models in ACS Model Manager: ![ACS-Model-Manager](ACS-Model-Manager.png)
 7. Aspect ![Aspect](Aspect.png)
-8. Aspect Properties![Aspect-Properties](Aspect-Properties.png)
-9. Map the aspects between APS and ACS. ![Aspect-Mapping](Aspect-Mapping.png)
+8. Map the aspects between APS and ACS. ![Aspect-Mapping](Aspect-Mapping.png)
+9. Aspect Properties![Aspect-Properties](Aspect-Properties.png)
 10. Map the aspect properties between APS and ACS. ![All-Properties-Mapping](All-Properties-Mapping.png)
 11. Publish/Deploy the APS App.
 
