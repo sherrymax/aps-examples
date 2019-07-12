@@ -16,7 +16,7 @@ Build a process to create a listener that listens to a task.
 2. Process Flow.  ![Process-Flow](Process-Flow.png)
 3. Task Configuration.   ![Human-Task-Configuration](Human-Task-Configuration.png)
 4. Task Listener Configuration in Task. ![Request-Mapping](Request-Mapping.png)
-5. Code Snippet. ![Code-Snippet](Java-Code.png)
+5. Properties Mapping. ![Properties-Mapping](Properties-Mapping.png)
 6. Source Code. [Source-Code](activiti-extension-task-listener-java-code.zip)
 7. The JAR File. [Task-Listener.jar](activiti-extension-task-listener-jar-1.0-SNAPSHOT.jar)
 8. Copy the jar file to tomcat-lib location. [eg: /usr/local/tomcat/webapps/activiti-app/WEB-INF/lib/]
@@ -26,6 +26,5 @@ Build a process to create a listener that listens to a task.
 ### Run the DEMO
 
 ### References
-1. https://www.activiti.org/userguide/#taskListener
-2. https://www.programcreek.com/java-api-examples/?api=org.activiti.engine.delegate.TaskListener
-3. https://community.alfresco.com/thread/175168-proper-way-to-implement-a-custom-a-tasklistener-in-activiti
+1. https://docs.alfresco.com/process-services1.9/concepts/ps-create-datamodel.html
+2. 
