@@ -9,11 +9,15 @@ Click + (plus icon) and configure the following settings (see the activiti-app.p
 
 ### Data Source configuration of following DBs are given below
 1. [Oracle](#oracle)
-2. [MySQL](#mysql)
-3. [PostGreSQL](#postgresql)
+2. [MSSQL](#mssql)
+3. [MySQL](#mysql)
+4. [PostGreSQL](#postgresql)
 
 ## <a name="oracle"></a>Oracle DB
 ![Oracle](oracle.png)
+
+## <a name="mssql"></a>MSSQL DB
+![MSSQL](mssql.png)
 
 ## <a name="mysql"></a>MySQL DB
 ![MySQL](mysql.png)
