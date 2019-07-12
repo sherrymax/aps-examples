@@ -1,7 +1,9 @@
-#### The project contains all the components required to create an APS task Listener
+#### The project contains all the components required to set the process values as custom properties of uploaded document.
 
 ### Use-Case / Requirement
-Build a process to create a listener that listens to a task.
+Build a process :
+1. User should enter values and attach a file to a human task.
+2. The process instance values should be bound as custom properties (Aspects) of the attached file in ACS.
 
 
 ### Prerequisites to run this demo end-2-end
@@ -12,19 +14,17 @@ Build a process to create a listener that listens to a task.
 ## Configuration Steps
 
 ### Activiti Setup and Process Deployment
-1. Import the [Task-Listener.zip](Task-Listener.zip) app available in this project into Activiti.
-2. Process Flow.  ![Process-Flow](Process-Flow.png)
-3. Task Configuration.   ![Human-Task-Configuration](Human-Task-Configuration.png)
-4. Task Listener Configuration in Task. ![Request-Mapping](Request-Mapping.png)
-5. Properties Mapping. ![Properties-Mapping](Properties-Mapping.png)
-6. Source Code. [Source-Code](activiti-extension-task-listener-java-code.zip)
-7. The JAR File. [Task-Listener.jar](activiti-extension-task-listener-jar-1.0-SNAPSHOT.jar)
-8. Copy the jar file to tomcat-lib location. [eg: /usr/local/tomcat/webapps/activiti-app/WEB-INF/lib/]
-9. Publish/Deploy the APS App.
+1. Import the [FAA-Application.zip](FAA-Application.zip) app available in this project into Activiti.
+2. Process Flow  ![Process-Flow](Process-Flow.png)
+3. Publish To Alfresco Task  ![Publish](Publish.png)
+4. Publish Task : Document Configuration ![Publish-Task-Configuration-Doc-Definition](Publish-Task-Configuration-Doc-Definition.png)
+5. Publish Task : Properties Configuration ![Publish-Task-Configuration-Props-Mapping](Publish-Task-Configuration-Props-Mapping.png)
+6. Properties Mapping. ![Properties-Mapping](Properties-Mapping.png)
+7. Publish/Deploy the APS App.
 
 
 ### Run the DEMO
 
 ### References
 1. https://docs.alfresco.com/process-services1.9/concepts/ps-create-datamodel.html
-2. 
+2. http://docs.alfresco.com/activiti/docs/user-guide/1.5.0/#_publish_to_alfresco
