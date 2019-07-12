@@ -19,8 +19,12 @@ Build a process :
 3. Publish To Alfresco Task  ![Publish](Publish.png)
 4. Publish Task : Document Configuration ![Publish-Task-Configuration-Doc-Definition](Publish-Task-Configuration-Doc-Definition.png)
 5. Publish Task : Properties Configuration ![Publish-Task-Configuration-Props-Mapping](Publish-Task-Configuration-Props-Mapping.png)
-6. Properties Mapping. ![Properties-Mapping](Properties-Mapping.png)
-7. Publish/Deploy the APS App.
+6. Create Data Models in ACS Model Manager: ![ACS-Model-Manager](ACS-Model-Manager.png)
+7. Aspect ![Aspect](Aspect.png)
+7. Aspect Properties![Aspect-Properties](Aspect-Properties.png)
+8. Aspect Mapping. ![Aspect-Mapping](Aspect-Mapping.png)
+8. Aspect Properties Mapping. ![Properties-Mapping](Properties-Mapping.png)
+9. Publish/Deploy the APS App.
 
 
 ### Run the DEMO
