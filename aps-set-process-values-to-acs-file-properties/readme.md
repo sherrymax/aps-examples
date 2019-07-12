@@ -17,8 +17,8 @@ Build a process :
 1. Import the [FAA-Application.zip](FAA-Application.zip) app available in this project into Activiti.
 2. Process Flow  ![Process-Flow](Process-Flow.png)
 3. Publish To Alfresco Task  ![Publish](Publish.png)
-4. Publish Task : Document Configuration ![Publish-Task-Configuration-Doc-Definition](Publish-Task-Configuration-Doc-Definition.png)
-5. Publish Task : Properties Configuration ![Publish-Task-Configuration-Props-Mapping](Publish-Task-Configuration-Props-Mapping.png)
+4. Publish Task : Document Definition ![Publish-Task-Configuration-Doc-Definition](Publish-Task-Configuration-Doc-Definition.png)
+5. Publish Task : Properties Mapping ![Publish-Task-Configuration-Props-Mapping](Publish-Task-Configuration-Props-Mapping.png)
 6. Create Data Models in ACS Model Manager: ![ACS-Model-Manager](ACS-Model-Manager.png)
 7. Aspect ![Aspect](Aspect.png)
 8. Map the aspects between APS and ACS. ![Aspect-Mapping](Aspect-Mapping.png)
