@@ -27,7 +27,7 @@ Build a process to create a folder in the ACS repo with some metdata.
 	}
 }
 ```
-5. The Endpoint configuration. ![Endpoint](Endpoint.png)
+5. The APS Endpoint configuration for REST call. ![Endpoint](Endpoint.png)
 6. Publish/Deploy the App.
 
 
