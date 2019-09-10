@@ -18,7 +18,7 @@ Build a process to create a folder in the ACS repo with some metdata.
 4. The Request Mapping Configuration. ![Request-Mapping](Request-Mapping.png)
 ```javascript
 {
-	"name":${folderName},
+	"name":${foldername},
 	"nodeType":"cm:folder",
 	"properties":
 	{
