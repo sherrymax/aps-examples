@@ -16,6 +16,17 @@ Build a process to create a folder in the ACS repo with some metdata.
 2. The process flow.  ![Process-Flow](Process-Flow.png)
 3. The REST CAll configuration. ![REST-Call](REST-Call.png)
 4. The Request Mapping Configuration. ![Request-Mapping](Request-Mapping.png)
+```json
+{
+	"name":${folderName},
+	"nodeType":"cm:folder",
+	"properties":
+	{
+		"cm:title":${title},
+		"cm:description":${description}
+	}
+}
+```
 5. The Endpoint configuration. ![Endpoint](Endpoint.png)
 6. Publish/Deploy the App.
 
