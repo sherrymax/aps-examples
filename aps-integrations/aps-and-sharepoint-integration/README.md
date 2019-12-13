@@ -41,7 +41,13 @@ Future Modifications
  2. Provide options for uploading a single file from a process variable, all process attachments, or base64 String
  3. Return SharePoint File URL
  
- Notes
+Notes
 -------------
  This extension was developed by the team at [Muraai] (http://www.muraai.com/).
  This has been tested on APS v1.9
+
+References
+-------------
+ http://www.ktskumar.com/2017/01/access-sharepoint-online-using-postman/
+ http://www.muraai.com/
+ https://github.com/cijujoseph/activiti-examples/tree/master/aps-acs-integration-utils
