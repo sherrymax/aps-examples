@@ -1,5 +1,5 @@
-### H3 Upload to SharePoint - APS BPMN Stencil 
-##### H5 Built as Java extension project 
+# Upload to SharePoint - APS BPMN Stencil 
+### Built as Java extension project 
 ===================
 
 Build,  Deploy and Run
