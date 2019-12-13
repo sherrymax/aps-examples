@@ -23,12 +23,13 @@ Please ensure to remove these credentials before providing to external users.
 
 Open the [sharepoint-connector.properties](https://git.alfresco.com/solution-engineering/sharepoint_online_upload-aps-extension/blob/master/sharepoint-connector.properties) file and modify the following strings based on YOUR SharePoint Online account.
 ```sh
-sharepoint.connector.createFolder.url=https://alfrescosoftware.sharepoint.com/sites/aps2sharepoint/_api/web/Folders
-sharepoint.connector.uploadDocument.url=https://alfrescosoftware.sharepoint.com/sites/aps2sharepoint
-sharepoint.connector.sharedDocumentSite.url=/sites/aps2sharepoint/LOE/
+sharepoint.connector.createFolder.url=https://mysite.sharepoint.com/sites/mysite/_api/web/Folders
+sharepoint.connector.uploadDocument.url=https://mysite.sharepoint.com/sites/mysite
+sharepoint.connector.sharedDocumentSite.url=/sites/mysite/LOE/
 sharepoint.connector.clientId=0af52da6-4548-4e53-84ae-56b1a8f75990@a92a627e-e9ce-48ba-8edb-6c64a4dbcf34
+sharepoint.connector.tenantId=a92a627e-e9ce-48ba-8edb-6c64a4dbcf34
 sharepoint.connector.clientSecret=m7CGwkq3OFw/VKmBrHidMgmY5T89H/SqjOZQP15xcXU=
-sharepoint.connector.resource=00000003-0000-0ff1-ce00-000000000000/alfrescosoftware.sharepoint.com@a92a627e-e9ce-48ba-8edb-6c64a4dbcf34
+sharepoint.connector.resource=00000003-0000-0ff1-ce00-000000000000/mysite.sharepoint.com@a92a627e-e9ce-48ba-8edb-6c64a4dbcf34
 ```
 the sharepoint-connector.properties needs to be saved to webapps/activiti-app/WEB-INF/classes
 This [link](https://dev.office.com/officestore/docs/create-or-update-client-ids-and-secrets) and has instructions for generating the Client ID and Client Secret.  [Access SharePoint Online using Postman](http://www.ktskumar.com/2017/01/access-sharepoint-online-using-postman/) provides additional information on setup and testing.
