@@ -22,45 +22,25 @@ Here is a tip to quickly capture these details as part of ScriptTaskListener
 3. The process flow.  ![Process-Flow](Process-Flow.png)
 4. The process variables configuration. ![Process-Variables](Process-Variables.png)
 5. The task listener. ![Task-Listener](Task-Listener.png)
-6. The signal event definition. ![Signal-Definition](Signal-Definition.png)
+6. The task listener configuration. ![Task-Listener-Configuration](Task-Listener-Configuration.png)
 7. Publish/Deploy the App.
 
-### POSTMAN
-1. Use POSTMAN to make REST calls and trigger the Boundary Signal Events.
+### Task Listener Configuration
+1. ScriptTaskListener Event Class
+```
+org.activiti.engine.impl.bpmn.listener.ScriptTaskListener
+```
+2. language
+```
+javascript
+```
 
-    TIP: Quickly import REST Calls from [POSTMAN Collection](Postman-Collection-SignalEvents.postman_collection.json).
-
-2. As the first step, REST GET call should be to get the Execution ID of the targeted Boundary Signal Event.
+3. script
 ```
-http://<hostname>:<port>/activiti-app/api/runtime/executions?tenantId=<tenantId>&processInstanceId=<instanceID>
+task.execution.setVariable("requestSubmitter", userInfoBean.getFullName(userInfoBean.getCurrentUser().getId())); task.execution.setVariable("submittedTaskName", task.getName());
 ```
-The configuration is shown below. ![REST-SME-ExeId](REST-SME-ExeId.png)
-If necessary, the value of Execution ID can be cross-verified by querying the DB.
-![DB-table-value](DB-table-value.png)
-
-3. As the second step, REST PUT call should send trigger for Boundary Signal Event.
-```
-http://<hostname>:<port>/activiti-app/api/runtime/executions/<execution-id-of-boundary-signal-event>?tenantId=<tenantId>
-```
-The header of PUT call is as follows:
-```javascript
-Authorization = Basic xxxxxxxxxxxxxxx
-cache-control = no-cache
-content-type = application/json
-```
-The body of the PUT call is as follows: 
-```json
-{
-"action":"signalEventReceived",
-"signalName":"saveFaceSignal"
-}
-```
-The configuration is shown below. ![REST-Trigger-SME](REST-Trigger-SME.png)
 
 ### Run the DEMO
 
 ### References
-1. https://www.activiti.org/userguide/index.html#restQueryVariable
-2. https://www.activiti.org/userguide/index.html#restExecutionsGet
-3. http://localhost:3000/activiti-app/api-explorer.html#/
-
+1. http://howtobrothers.com/2018/03/03/how-to-set-a-task-listener-on-the-app-designer-visual-editor-in-alfresco-process-services/
