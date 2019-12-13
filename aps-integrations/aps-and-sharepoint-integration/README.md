@@ -17,7 +17,7 @@ Build,  Deploy and Run
 Configuration for SharePoint Online
 -------------
 
-A [SharePoint APP](https://alfrescosoftware.sharepoint.com/sites/aps2sharepoint/) has already been configured for internal Alfresco user.  
+A [SharePoint APP](https://mysite.sharepoint.com/sites/myapp/) has already been configured for internal Alfresco user.  
 The credentials are populated in the [sharepoint-connector.properties](https://git.alfresco.com/solution-engineering/sharepoint_online_upload-aps-extension/blob/master/sharepoint-connector.properties) file.
 Please ensure to remove these credentials before providing to external users.
 
@@ -49,6 +49,7 @@ Notes
 
 References
 -------------
- http://www.ktskumar.com/2017/01/access-sharepoint-online-using-postman/
- http://www.muraai.com/
- https://github.com/cijujoseph/activiti-examples/tree/master/aps-acs-integration-utils
+ * http://www.ktskumar.com/2017/01/access-sharepoint-online-using-postman/
+ * https://dev.office.com/officestore/docs/create-or-update-client-ids-and-secrets
+ * http://www.muraai.com/
+ * https://github.com/cijujoseph/activiti-examples/tree/master/aps-acs-integration-utils
