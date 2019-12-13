@@ -1,0 +1,115 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project xmlns="http://maven.apache.org/POM/4.0.0" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+	xsi:schemaLocation="http://maven.apache.org/POM/4.0.0 http://maven.apache.org/maven-v4_0_0.xsd">
+	<modelVersion>4.0.0</modelVersion>
+	<groupId>com.activiti.extension</groupId>
+	<artifactId>activiti-extension-jar</artifactId>
+	<version>1.0-SNAPSHOT</version>
+	<name>Activiti Extension Module</name>
+	<description>Activiti Extension Module that produces a JAR file with Java extensions such as service task delegates.</description>
+	<packaging>jar</packaging>
+
+	<properties>
+		<project.build.sourceEncoding>UTF-8</project.build.sourceEncoding>
+
+
+		<!-- Properties used in dependency declarations -->
+		<activiti.groupId>com.activiti</activiti.groupId>
+		<activiti.version>1.5.1</activiti.version>
+		<activiti.engine.version>5.21.0.2</activiti.engine.version>
+		<json.simple.version>1.1.1</json.simple.version>
+		<spring.version>4.1.6.RELEASE</spring.version>
+
+
+		<!-- Compile with Java 8, default is 5 -->
+		<maven.compiler.source>1.8</maven.compiler.source>
+		<maven.compiler.target>1.8</maven.compiler.target>
+	</properties>
+
+	<dependencies>
+		<!-- The main Activiti Enterprise application dependency that brings in 
+			all needed classes to compile your customizations -->
+		<dependency>
+			<groupId>${activiti.groupId}</groupId>
+			<artifactId>activiti-app-logic</artifactId>
+			<version>${activiti.version}</version>
+		</dependency>
+
+		<dependency>
+			<groupId>javax.servlet</groupId>
+			<artifactId>javax.servlet-api</artifactId>
+			<version>3.0.1</version>
+			<scope>provided</scope>
+		</dependency>
+
+
+		<!-- Bring in Spring JDBC for use in Custom Data Model Service -->
+		<dependency>
+			<groupId>org.springframework</groupId>
+			<artifactId>spring-jdbc</artifactId>
+			<version>${spring.version}</version>
+			<scope>provided</scope>
+		</dependency>
+
+		<dependency>
+			<groupId>log4j</groupId>
+			<artifactId>log4j</artifactId>
+			<version>1.2.17</version>
+		</dependency>
+
+		<dependency>
+			<groupId>com.activiti</groupId>
+			<artifactId>activiti-app-rest</artifactId>
+			<version>${activiti.version}</version>
+		</dependency>
+
+		<!-- Testing -->
+		<dependency>
+			<groupId>junit</groupId>
+			<artifactId>junit</artifactId>
+			<version>4.11</version>
+			<scope>test</scope>
+		</dependency>
+
+		<dependency>
+			<groupId>com.googlecode.json-simple</groupId>
+			<artifactId>json-simple</artifactId>
+			<version>${json.simple.version}</version>
+		</dependency>
+
+		<dependency>
+			<groupId>org.apache.httpcomponents</groupId>
+			<artifactId>httpmime</artifactId>
+			<version>4.3.5</version>
+		</dependency>
+
+
+	</dependencies>
+
+	<build>
+		<resources>
+			<!-- Filter the resource files in this project and do property substitutions -->
+			<resource>
+				<directory>src/main/resources</directory>
+				<filtering>true</filtering>
+			</resource>
+		</resources>
+		<testResources>
+			<!-- Filter the test resource files in this project and do property substitutions -->
+			<testResource>
+				<directory>src/test/resources</directory>
+				<filtering>true</filtering>
+			</testResource>
+		</testResources>
+	</build>
+
+	<!-- Alfresco Maven Repositories -->
+	<repositories>
+		<!-- Activiti Enterprise Edition Artifacts, put username/pwd for server 
+			in settings.xml -->
+		<repository>
+			<id>alfresco-internal</id>
+			<url>https://artifacts.alfresco.com/nexus/content/repositories/activiti-enterprise-releases</url>
+		</repository>
+	</repositories>
+</project>
