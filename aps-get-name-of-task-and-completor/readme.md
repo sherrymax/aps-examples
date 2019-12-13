@@ -42,7 +42,7 @@ task.execution.setVariable("requestSubmitter", userInfoBean.getFullName(userInfo
 
 ### Run the DEMO
 
-![](run-the-demo.mp4)
+![](run-the-demo.gif)
 
 
 ### References
