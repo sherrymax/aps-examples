@@ -1,4 +1,4 @@
-An extension project containing a custom "Upload to SharePoint Online" BPMN Stencil
+Upload to SharePoint - APS BPMN Stencil : Built as Java extension project 
 ===================
 
 Build,  Deploy and Run
