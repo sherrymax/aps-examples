@@ -42,8 +42,6 @@ task.execution.setVariable("requestSubmitter", userInfoBean.getFullName(userInfo
 
 ### Run the DEMO
 
-![](run-the-demo.gif)
-
 
 ### References
 1. http://howtobrothers.com/2018/03/03/how-to-set-a-task-listener-on-the-app-designer-visual-editor-in-alfresco-process-services/
