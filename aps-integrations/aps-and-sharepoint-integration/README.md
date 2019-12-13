@@ -28,9 +28,9 @@ Open the [sharepoint-connector.properties](https://git.alfresco.com/solution-eng
 sharepoint.connector.createFolder.url=https://mysite.sharepoint.com/sites/mysite/_api/web/Folders
 sharepoint.connector.uploadDocument.url=https://mysite.sharepoint.com/sites/mysite
 sharepoint.connector.sharedDocumentSite.url=/sites/mysite/LOE/
-sharepoint.connector.clientId=0af52da6-4548-4e53-84ae-56b1a8f75990@a92a627e-e9ce-48ba-8edb-6c64a4dbcf34
-sharepoint.connector.tenantId=a92a627e-e9ce-48ba-8edb-6c64a4dbcf34
-sharepoint.connector.clientSecret=m7CGwkq3OFw/VKmBrHidMgmY5T89H/SqjOZQP15xcXU=
+sharepoint.connector.clientId=123456-1234-1234-1234-1234567890@1234567-1234-1234-1234-1234567890
+sharepoint.connector.tenantId=1234567-1234-1243-1234-1234567890
+sharepoint.connector.clientSecret=abcdefghijklmn/ABCDEFGHIJKLMNOP/ABcDefghIJKLmnop=
 sharepoint.connector.resource=00000003-0000-0ff1-ce00-000000000000/mysite.sharepoint.com@a92a627e-e9ce-48ba-8edb-6c64a4dbcf34
 ```
 the sharepoint-connector.properties needs to be saved to webapps/activiti-app/WEB-INF/classes
@@ -44,14 +44,9 @@ Future Modifications
  2. Provide options for uploading a single file from a process variable, all process attachments, or base64 String
  3. Return SharePoint File URL
  
-Notes
--------------
- This extension was developed by the team at [Muraai] (http://www.muraai.com/).
- This has been tested on APS v1.9
 
 References
 -------------
  * http://www.ktskumar.com/2017/01/access-sharepoint-online-using-postman/
  * https://dev.office.com/officestore/docs/create-or-update-client-ids-and-secrets
- * http://www.muraai.com/
  * https://github.com/cijujoseph/activiti-examples/tree/master/aps-acs-integration-utils
