@@ -1,6 +1,5 @@
 # Upload to SharePoint - APS BPMN Stencil 
-### Built as Java extension project 
-===================
+### *Built as a Java extension project*
 
 Build,  Deploy and Run
 -------------
