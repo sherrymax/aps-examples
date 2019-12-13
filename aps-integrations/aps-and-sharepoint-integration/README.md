@@ -1,6 +1,8 @@
 # Upload to SharePoint - APS BPMN Stencil 
 ### *Built as a Java extension project*
 
+Developing an integration from APS to Sharepoint, leveraging as a java extension project. This helps developers to create APS-Sharepoint integrations to upload documents from APS. This article uses REST API from Sharepoint to build the integration.
+
 Build,  Deploy and Run
 -------------
 
