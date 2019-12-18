@@ -1,21 +1,21 @@
-# Upload to SharePoint - APS BPMN Stencil 
+# Upload to SharePoint - APS BPMN Stencil
 ### *Built as a Java extension project*
 
 Developing an integration from APS to Sharepoint, leveraging as a java extension project. This helps developers to create APS-Sharepoint integrations to upload documents from APS. This article uses REST API from Sharepoint to build the integration.
 
-Build,  Deploy and Run
+Build, Deploy and Run
 -------------
 
  1. [Setup a build environment](https://community.alfresco.com/community/bpm/blog/2016/11/14/activiti-enterprise-developer-series-setting-up-an-extension-project)
  2. Modify SharePointDelegate.java for the SharePoint Online target environment
- 2.  Run "mvn clean install"
+ 2. Run "mvn clean install"
  3. Deploy activiti-extension-jar-1.0-SNAPSHOT.jar, httpmime-4.3.5.jar and json-simple-1.1.1.jar (dependencies for the extension) to the activiti-app webapp's WEB-INF/lib folder
  4. Import the "SharePoint Online Upload Example.zip" into your APS instance via the APS UI
  5. Modify the process configuration to meet your needs and run the process end-end. If successful, the process will be uploaded to SharePoint Online
 
  ![Process Config 1](./process_config1.png?raw=true "Process Config 1")
  ![Process Config 2](./process_config2.png?raw=true "Process Config 2")
- 
+
 Configuration for SharePoint Online
 -------------
 
@@ -43,7 +43,7 @@ Future Modifications
  1. Expose configuration details as Stencil Properties
  2. Provide options for uploading a single file from a process variable, all process attachments, or base64 String
  3. Return SharePoint File URL
- 
+
 
 References
 -------------
