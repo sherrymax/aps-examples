@@ -22,7 +22,7 @@ OR
 5. Publish/Deploy the App.
 
 ### Please follow these steps if you want to update the extension
-1. ![Setting up an Extension Project](https://community.alfresco.com/community/bpm/blog/2016/11/14/activiti-enterprise-developer-series-setting-up-an-extension-project)
+1. ![Setting up an Extension Project](https://hub.alfresco.com/t5/alfresco-process-services/activiti-enterprise-developer-series-setting-up-an-extension/ba-p/287187)
 2. The source code of the extension is available ![here](resources/code).
 
 ### Run the DEMO
