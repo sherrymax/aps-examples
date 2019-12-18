@@ -15,9 +15,8 @@ The process workflow needs activities to save all the documents that are attache
 1. Setup Alfresco Activiti if you don't have one already. Instructions & help available at [Activiti Docs](http://docs.alfresco.com/activiti/docs/), [Alfresco BPM Community](https://community.alfresco.com/community/bpm)
 2. Import the [send-email-with-attachments.zip](resources/send-email-with-attachments.zip) app available in this project into Activiti.
 3. The process flow.  ![Process-Flow](resources/Process-Flow.png)
-4. The email task configuration if you want to send all documents in the process. ![Email-with-all-documents](resources/Email-with-all-documents.png)
-5. The email task configuration if you want to send only one document in the process. ![Email-with-one-document](resources/Email-with-one-document.png)
-6. Deploy the [JAR file](resources/activiti-extension-send-email-with-attachments-1.0-SNAPSHOT.jar) to the activiti-app webapp's WEB-INF/lib folder.
+4. The save document task configuration ![Save-Document-Configuration](resources/Save-Document-Configuration.png)
+6. Deploy the [JAR file](resources/activiti-extension-save-process-documents-1.0-SNAPSHOT.jar) to the activiti-app webapp's WEB-INF/lib folder.
    eg: /usr/local/tomcat/webapps/activiti-app/WEB-INF/lib
 7. Publish/Deploy the App.
 
