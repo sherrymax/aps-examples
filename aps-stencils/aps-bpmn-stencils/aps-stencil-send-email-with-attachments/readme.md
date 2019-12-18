@@ -18,12 +18,12 @@ OR
 1. Setup Alfresco Activiti if you don't have one already. Instructions & help available at [Activiti Docs](http://docs.alfresco.com/activiti/docs/), [Alfresco BPM Community](https://community.alfresco.com/community/bpm)
 2. Import the [send-email-with-attachments.zip](resources/send-email-with-attachments.zip) app available in this project into Activiti.
 3. The process flow.  ![Process-Flow](resources/Process-Flow.png)
-4. Deploy the ![JAR file](resources/activiti-extension-send-email-with-attachments-1.0-SNAPSHOT.jar) to the activiti-app webapp's WEB-INF/lib folder.
+4. Deploy the [JAR file](resources/activiti-extension-send-email-with-attachments-1.0-SNAPSHOT.jar) to the activiti-app webapp's WEB-INF/lib folder.
 5. Publish/Deploy the App.
 
 ### Please follow these steps if you want to update the extension
-1. ![Setting up an Extension Project](https://hub.alfresco.com/t5/alfresco-process-services/activiti-enterprise-developer-series-setting-up-an-extension/ba-p/287187)
-2. The source code of the extension is available ![here](resources/code).
+1. [Setting up an Extension Project](https://community.alfresco.com/community/bpm/blog/2016/11/14/activiti-enterprise-developer-series-setting-up-an-extension-project)
+2. The source code of the extension is available [here](resources/code).
 
 ### Run the DEMO
 
