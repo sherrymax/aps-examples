@@ -13,13 +13,13 @@ A child/sub-process has to be invoked from a parent process and parameters need 
 ### Activiti Setup and Process Deployment
 1. Setup Alfresco Activiti if you don't have one already. Instructions & help available at [Activiti Docs](http://docs.alfresco.com/activiti/docs/), [Alfresco BPM Community](https://community.alfresco.com/community/bpm)
 2. Import the [Parent-Sub-Process-Communication.zip](Parent-Sub-Process-Communication.zip) app available in this project into Activiti.
-3. The parent process flow.  ![Parent-Process-Flow](Parent-Process-Flow.png)
-4. Parent Process - Call Activity configuration ![Invoke-Sub-Process-Flow](Invoke-Sub-Process-Flow.png)
-5. Parent Process - Call Activity : In-Parameters ![In-params](In-params.png)
-6. Parent Process - Call Activity : Out-Parameters ![Out-params](Out-params.png)
-7. The Child/sub-process flow.  ![Child-Process-Flow](Child-Process-Flow.png)
-8. Sub-Process : The process variables configuration. ![Sub-Process-Script](Sub-Process-Variables.png)
-9. Sub-Process : Script task ![Sub-Process-Script-Task](Sub-Process-Script-Task.png)
+3. The parent process flow.  ![Parent-Process-Flow](images/Parent-Process-Flow.png)
+4. Parent Process - Call Activity configuration ![Invoke-Sub-Process-Flow](images/Invoke-Sub-Process-Flow.png)
+5. Parent Process - Call Activity : In-Parameters ![In-params](images/In-params.png)
+6. Parent Process - Call Activity : Out-Parameters ![Out-params](images/Out-params.png)
+7. The Child/sub-process flow.  ![Child-Process-Flow](images/Child-Process-Flow.png)
+8. Sub-Process : The process variables configuration. ![Sub-Process-Script](images/Sub-Process-Variables.png)
+9. Sub-Process : Script task ![Sub-Process-Script-Task](images/Sub-Process-Script-Task.png)
 10. Sub-Process : Actual Script
 ```
 def firstName = execution.getVariable("child_firstName");
