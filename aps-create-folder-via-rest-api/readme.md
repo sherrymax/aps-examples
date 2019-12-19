@@ -13,9 +13,9 @@ Build a process to create a folder in the ACS repo with some metdata.
 
 ### Activiti Setup and Process Deployment
 1. Import the [ACS-File-Creator.zip](ACS-File-Creator.zip) app available in this project into Activiti.
-2. The process flow.  ![Process-Flow](Process-Flow.png)
-3. The REST CAll configuration. ![REST-Call](REST-Call.png)
-4. The Request Mapping Configuration. ![Request-Mapping](Request-Mapping.png)
+2. The process flow.  ![Process-Flow](images/Process-Flow.png)
+3. The REST CAll configuration. ![REST-Call](images/REST-Call.png)
+4. The Request Mapping Configuration. ![Request-Mapping](images/Request-Mapping.png)
   ```javascript
   {
   	"name":${foldername},
@@ -27,7 +27,7 @@ Build a process to create a folder in the ACS repo with some metdata.
   	}
   }
   ```
-5. The APS Endpoint configuration for REST call. ![Endpoint](Endpoint.png)
+5. The APS Endpoint configuration for REST call. ![Endpoint](images/Endpoint.png)
 6. Publish/Deploy the App.
 
 
