@@ -19,10 +19,10 @@ Here is a tip to quickly capture these details as part of ScriptTaskListener
 ### Activiti Setup and Process Deployment
 1. Setup Alfresco Activiti if you don't have one already. Instructions & help available at [Activiti Docs](http://docs.alfresco.com/activiti/docs/), [Alfresco BPM Community](https://community.alfresco.com/community/bpm)
 2. Import the [Task-Data.zip](Task-Data.zip) app available in this project into Activiti.
-3. The process flow.  ![Process-Flow](Process-Flow.png)
-4. The process variables configuration. ![Process-Variables](Process-Variables.png)
-5. The task listener. ![Task-Listener](Task-Listener.png)
-6. The task listener configuration. ![Task-Listener-Configuration](Task-Listener-Configuration.png)
+3. The process flow.  ![Process-Flow](images/Process-Flow.png)
+4. The process variables configuration. ![Process-Variables](images/Process-Variables.png)
+5. The task listener. ![Task-Listener](images/Task-Listener.png)
+6. The task listener configuration. ![Task-Listener-Configuration](images/Task-Listener-Configuration.png)
 7. Publish/Deploy the App.
 
 ### Task Listener Configuration
