@@ -20,6 +20,7 @@ OR
 3. The process flow.  ![Process-Flow](resources/Process-Flow.png)
 4. The email task configuration if you want to send all documents in the process. ![Email-with-all-documents](resources/Email-with-all-documents.png)
 5. The email task configuration if you want to send only one document in the process. ![Email-with-one-document](resources/Email-with-one-document.png)
+6. Create an Email Template ![Email-Template-List](resources/Email-Template-List.png)![New-Email-Template](resources/New-Email-Template.png)
 6. Deploy the [JAR file](resources/activiti-extension-send-email-with-attachments-1.0-SNAPSHOT.jar) to the activiti-app webapp's WEB-INF/lib folder.
    eg: /usr/local/tomcat/webapps/activiti-app/WEB-INF/lib
 7. Publish/Deploy the App.
