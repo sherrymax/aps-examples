@@ -9,11 +9,12 @@
 ```html
 <div ng-controller="MyController" class="input-group amount-field">
     <span class="input-group-addon ng-binding">{{field.params.customProperties.type}}</span>
-    <!--<input id="activiti-mypercentage"  class="form-control ng-pristine ng-valid ng-valid-number-min-value ng-valid-number-max-value ng-valid-required ng-touched" style="min-width: 40px" ng-model="field.numberValue" ng-change="onFieldValueChange(field)" ng-blur="onFieldBlur(field)" ng-focus="onFieldFocus(field)" number-input-check="" ng-required="field.required" number-min-value="" number-max-value="" autocomplete="off">-->
+
     <input id="activiti-mypercentage" type="number"
     class="form-control ng-pristine ng-valid ng-valid-number-min-value ng-valid-number-max-value ng-valid-required ng-touched"
     name="myDecimal" placeholder="{{field.params.customProperties.placeHolder}}"
     ng-model="field.value" ng-pattern="{{field.params.customProperties.pattern}}"/>
+    
 </div>
 ```
 
