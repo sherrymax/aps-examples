@@ -20,6 +20,8 @@
 
 ## Runtime View
 A runtime image of this stencil![A runtime image of this stencil](images/runtime.jpg)
+[A runtime image of this stencil](images/runtime1.jpg)
+[A runtime image of this stencil](images/runtime2.jpg)
 
 
 ## Stencil
