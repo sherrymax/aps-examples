@@ -14,16 +14,16 @@
     class="form-control ng-pristine ng-valid ng-valid-number-min-value ng-valid-number-max-value ng-valid-required ng-touched"
     name="myDecimal" placeholder="{{field.params.customProperties.placeHolder}}"
     ng-model="field.value" ng-pattern="{{field.params.customProperties.pattern}}"/>
-    
+
 </div>
 ```
 
 ## Runtime View
-![images/runtime.jpg](runtime.jpg)
+![A runtime image of this stencil](images/runtime.jpg)
 
 
 ## Stencil
-![images/stencil.jpg](stencil.jpg)
+![Stencil Image](images/stencil.jpg)
 ![A sample process app can be downloaded here](Kindred-App.zip)
 ![Stencil can be downloaded here](Kindred-Stencil.zip)
 
