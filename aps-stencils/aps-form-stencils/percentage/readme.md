@@ -30,3 +30,4 @@
 1. https://docs.alfresco.com/process-services1.6/topics/custom_form_fields.html
 2. https://docs.alfresco.com/process-services1.6/topics/example_3_dynamic_pie_chart.html
 3. https://gsferreira.com/archive/2015/02/angularjs-input-number-with-two-decimal-places/
+4. https://github.com/cijujoseph/activiti-examples/tree/master/stencil-samples
