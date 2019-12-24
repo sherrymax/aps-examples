@@ -109,6 +109,7 @@ The workflows can have custom requirements to get certain data from the APS engi
 ```
 mvn clean install
 ```
+
 6. Deploy the jar file to the activiti-app webapp's WEB-INF/lib folder.
    eg: /usr/local/tomcat/webapps/activiti-app/WEB-INF/lib.
 
