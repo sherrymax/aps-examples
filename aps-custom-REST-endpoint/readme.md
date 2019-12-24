@@ -104,9 +104,9 @@ The workflows can have custom requirements to get certain data from the APS engi
         }
 
     }
-```        
+    ```        
 5. Build the extension project
-```
+```javascript
 mvn clean install
 ```
 
