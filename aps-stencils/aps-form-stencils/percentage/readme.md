@@ -19,13 +19,13 @@
 ```
 
 ## Runtime View
-![A runtime image of this stencil](images/runtime.jpg)
+A runtime image of this stencil![A runtime image of this stencil](images/runtime.jpg)
 
 
 ## Stencil
-![Stencil Image](images/stencil.jpg)
-![A sample process app can be downloaded here](Kindred-App.zip)
-![Stencil can be downloaded here](Kindred-Stencil.zip)
+Stencil Image![Stencil Image](images/stencil.jpg)
+[A sample process app can be downloaded here](Kindred-App.zip)
+[Stencil can be downloaded here](Kindred-Stencil.zip)
 
 ## References
 1. https://docs.alfresco.com/process-services1.6/topics/custom_form_fields.html
