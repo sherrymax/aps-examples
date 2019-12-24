@@ -9,7 +9,7 @@ The workflows can have custom requirements to get certain data from the APS engi
 
 ### Activiti Setup and Process Deployment
 1. Setup Alfresco Activiti if you don't have one already. Instructions & help available at [Activiti Docs](http://docs.alfresco.com/activiti/docs/), [Alfresco BPM Community](https://community.alfresco.com/community/bpm)
-2. Before starting with your REST API implementation make sure to ![set up a proper Activiti Extension project](https://hub.alfresco.com/t5/alfresco-process-services/activiti-enterprise-developer-series-setting-up-an-extension/ba-p/287187).
+2. Before starting with your REST API implementation make sure to [set up a proper Activiti Extension project](https://hub.alfresco.com/t5/alfresco-process-services/activiti-enterprise-developer-series-setting-up-an-extension/ba-p/287187).
 3. Sample custom API code to greet.
     ```java
     package com.activiti.extension.api;
