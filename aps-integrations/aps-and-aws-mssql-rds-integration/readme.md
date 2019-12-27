@@ -28,7 +28,7 @@ Follow the steps per [AWS Documentation](https://docs.aws.amazon.com/AmazonRDS/l
 
    ```
     Name : aps-custom-mssql-db
-    JDBC URL : jdbc:sqlserver://<aws-db-end-point>:<aws-port>;database=<aws-db-name>
+    JDBC URL : jdbc:sqlserver://<aws-db-end-point>:<aws-port>;database=<aws-mssql-db-name>
     Driver Class : com.microsoft.sqlserver.jdbc.SQLServerDriver
     User Name : db-username
     Password : db-password
