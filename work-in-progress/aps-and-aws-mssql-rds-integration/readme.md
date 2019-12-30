@@ -40,7 +40,7 @@ Some connections can use following JDBC URL
     JDBC URL : jdbc:sqlserver://<aws-db-end-point>:<aws-port>;database=<aws-mssql-db-name>
     ```
 
-### Activiti Setup and Process Deployment
+### APS Setup and Process Deployment
 1. Import the [MSSQL-Database-Operations.zip](MSSQL-Database-Operations.zip) app available in this project into Activiti.
 2. Process Flow.  ![Process-Flow](images/Process-Flow.png)
 3. Data Model Configuration in Process. ![Data-Model-App-Configuration](images/Data-Model-App-Configuration.png)
