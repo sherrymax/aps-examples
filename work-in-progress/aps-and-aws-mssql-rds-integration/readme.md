@@ -35,6 +35,7 @@ Tip: Follow this [blog post](http://www.snapdba.com/2013/10/using-sql-developer-
     Password : db-password
     ```
 Some connections can use following JDBC URL
+
     ```
     JDBC URL : jdbc:sqlserver://<aws-db-end-point>:<aws-port>;database=<aws-mssql-db-name>
     ```
