@@ -36,9 +36,9 @@ Tip: Follow this [blog post](http://www.snapdba.com/2013/10/using-sql-developer-
     ```
 Some connections can use following JDBC URL
 
-    ```
+
     JDBC URL : jdbc:sqlserver://<aws-db-end-point>:<aws-port>;database=<aws-mssql-db-name>
-    ```
+    
 
 ### Process App Setup and Deployment
 1. Import the [MSSQL-Database-Operations.zip](MSSQL-Database-Operations.zip) app available in this project into Activiti.
