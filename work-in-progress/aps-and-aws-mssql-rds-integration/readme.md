@@ -56,7 +56,8 @@ Tip: Follow this [blog post](http://www.snapdba.com/2013/10/using-sql-developer-
 ### References
 1. http://docs.alfresco.com/activiti/docs/user-guide/1.5.0/
 2. http://docs.alfresco.com/activiti/docs/user-guide/1.5.0/#_connecting_your_data_model_to_a_relational_database
-3. https://oskar.idashboards.com/hc/en-us/articles/227563548-Amazon-RDS-MS-SQL-Data-Source
-4. https://docs.aws.amazon.com/AmazonRDS/latest/UserGuide/CHAP_GettingStarted.CreatingConnecting.SQLServer.html
-5. http://www.snapdba.com/2013/10/using-sql-developer-to-connect-to-sql-server-databases/#.XgouWNZKjys
-6. https://djiang.wordpress.com/2007/02/27/using-oracle-sqldeveloper-to-access-sqlserver/
+3. https://www.activiti.org/userguide/index.html#supporteddatabases
+4. https://oskar.idashboards.com/hc/en-us/articles/227563548-Amazon-RDS-MS-SQL-Data-Source
+5. https://docs.aws.amazon.com/AmazonRDS/latest/UserGuide/CHAP_GettingStarted.CreatingConnecting.SQLServer.html
+6. http://www.snapdba.com/2013/10/using-sql-developer-to-connect-to-sql-server-databases/#.XgouWNZKjys
+7. https://djiang.wordpress.com/2007/02/27/using-oracle-sqldeveloper-to-access-sqlserver/
