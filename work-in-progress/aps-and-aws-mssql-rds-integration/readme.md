@@ -18,6 +18,7 @@ Follow the steps per [AWS Documentation](https://docs.aws.amazon.com/AmazonRDS/l
 
 ### Connect to the AWS RDS Oracle DB using SQL Developer
 ![sqldeveloper](images/sqldeveloper.png)
+Tip: Follow this [blog post](http://www.snapdba.com/2013/10/using-sql-developer-to-connect-to-sql-server-databases/#.XgouWNZKjys) to add MSSQL DB to SQL Developer.
 
 ### Create datasource for AWS RDS Oracle DB in APS
 1. Download the sqljdbc.jar file from [here](http://www.java2s.com/Code/Jar/s/Downloadsqljdbc420jar.htm)
@@ -55,3 +56,5 @@ Some connections can use following JDBC URL
 2. http://docs.alfresco.com/activiti/docs/user-guide/1.5.0/#_connecting_your_data_model_to_a_relational_database
 3. https://oskar.idashboards.com/hc/en-us/articles/227563548-Amazon-RDS-MS-SQL-Data-Source
 4. https://docs.aws.amazon.com/AmazonRDS/latest/UserGuide/CHAP_GettingStarted.CreatingConnecting.SQLServer.html
+5. http://www.snapdba.com/2013/10/using-sql-developer-to-connect-to-sql-server-databases/#.XgouWNZKjys
+6. https://djiang.wordpress.com/2007/02/27/using-oracle-sqldeveloper-to-access-sqlserver/
