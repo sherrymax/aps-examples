@@ -21,7 +21,7 @@ Follow the steps per [AWS Documentation](https://docs.aws.amazon.com/AmazonRDS/l
 Tip: Follow this [blog post](http://www.snapdba.com/2013/10/using-sql-developer-to-connect-to-sql-server-databases/#.XgouWNZKjys) to add MSSQL DB to SQL Developer.
 
 ### Create datasource for AWS RDS Oracle DB in APS
-1. Download the sqljdbc.jar file from [here](http://www.java2s.com/Code/Jar/s/Downloadsqljdbc420jar.htm)
+1. Download and unzip the sqljdbc42.jar file from [here](http://www.java2s.com/Code/JarDownload/sqljdbc4/sqljdbc4-2.0.jar.zip)
 2. Copy the [sqljdbc42.jar](sqljdbc42.jar) to tomcat/lib location of APS server. eg: /usr/share/tomcat/lib/sqljdbc42.jar
 3. Restart APS
 4. Create data source using the values mentioned in [APS article](https://github.com/sherrymax/aps-examples/tree/master/aps-custom-database-integration#mssql-db)
@@ -35,7 +35,7 @@ Tip: Follow this [blog post](http://www.snapdba.com/2013/10/using-sql-developer-
     Password : db-password
     ```
     Some connections can use following JDBC URL
-    
+
     JDBC URL : jdbc:sqlserver://<aws-db-end-point>:<aws-port>;database=<aws-mssql-db-name>
 
 
