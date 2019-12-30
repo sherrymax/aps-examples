@@ -25,7 +25,7 @@ Tip: Follow this [blog post](http://www.snapdba.com/2013/10/using-sql-developer-
 2. Copy the [sqljdbc42.jar](sqljdbc42.jar) to tomcat/lib location of APS server. eg: /usr/share/tomcat/lib/sqljdbc42.jar
 3. Restart APS
 4. Create data source using the values mentioned in [APS article](https://github.com/sherrymax/aps-examples/tree/master/aps-custom-database-integration#mssql-db)
-5. ![MSSQL](images/mssql.png)
+5. Datasource screenshot ![MSSQL](images/mssql.png)
 
    ```
     Name : aps-custom-mssql-db
