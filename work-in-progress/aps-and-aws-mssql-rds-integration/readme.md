@@ -28,12 +28,15 @@ Follow the steps per [AWS Documentation](https://docs.aws.amazon.com/AmazonRDS/l
 
    ```
     Name : aps-custom-mssql-db
-    JDBC URL : jdbc:sqlserver://<aws-db-end-point>:<aws-port>;database=<aws-mssql-db-name>
+    JDBC URL : jdbc:sqlserver://<aws-db-end-point>:<aws-port>
     Driver Class : com.microsoft.sqlserver.jdbc.SQLServerDriver
     User Name : db-username
     Password : db-password
     ```
-
+Some connections can use following JDBC URL
+    ```
+    JDBC URL : jdbc:sqlserver://<aws-db-end-point>:<aws-port>;database=<aws-mssql-db-name>
+    ```
 
 ### Activiti Setup and Process Deployment
 1. Import the [MSSQL-Database-Operations.zip](MSSQL-Database-Operations.zip) app available in this project into Activiti.
