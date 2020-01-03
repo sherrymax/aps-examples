@@ -32,7 +32,7 @@ org.activiti.engine.impl.bpmn.listener.ScriptTaskListener
 ```
 2. language
 ```
-javascript
+javascript or groovy depending on your script
 ```
 
 3. script
