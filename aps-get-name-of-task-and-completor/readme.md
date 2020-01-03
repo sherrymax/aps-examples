@@ -39,7 +39,7 @@ javascript
 ```
 task.execution.setVariable("requestSubmitter", userInfoBean.getFullName(userInfoBean.getCurrentUser().getId())); task.execution.setVariable("submittedTaskName", task.getName());
 ```
-OR as shown ![below](images/alternate-script-string.png)
+OR as shown below ![below](images/alternate-script-string.png)
 
 ### Run the DEMO
 
