@@ -15,14 +15,16 @@ Following design is used to accomplish the requirements.
 
 ## Configuration Steps
 
-### Activiti Setup and Process Deployment
+### Activiti : Setup and Process Deployment
 1. Import the [aps-ivr-app.zip](aps-ivr-app.zip) app available in this project into Activiti.
 2. Process Flow. ![Process-Flow-1](images/Process-Flow-1.png)
 3. REST Configuration.   ![REST-Configuration-1](images/REST-Configuration-1.png)
 4. Publish/Deploy the APS App.
 
-### Twilio Flow Definition as JSON
-The APS-IVR-Integration flow in Twilio
+### Twilio : APS-IVR-Integration Flow
+1. Create a APS-IVR-Integration flow in the Twilio Studio. [Twilio-1.png](images/Twilio-1.png)
+2. Modeler view of flow. [Twilio-2.png](images/Twilio-2.png)
+3. The json representation of flow.
 ```json
 {
   "description": "APS-IVR-Integration-Flow",
@@ -393,7 +395,7 @@ The APS-IVR-Integration flow in Twilio
 }
 ```
 
-### Publish the Twilio Flow and Run the DEMO
+### Publish the Twilio Flow and run the DEMO
 
 ### References
 1. https://github.com/cijujoseph/activiti-examples/tree/master/activiti-alexa-demo
