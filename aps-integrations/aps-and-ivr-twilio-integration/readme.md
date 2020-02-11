@@ -22,8 +22,8 @@ Following design is used to accomplish the requirements.
 4. Publish/Deploy the APS App.
 
 ### Twilio : APS-IVR-Integration Flow
-1. Create a APS-IVR-Integration flow in the Twilio Studio. [Twilio-1.png](images/Twilio-1.png)
-2. Modeler view of flow. [Twilio-2.png](images/Twilio-2.png)
+1. Create a APS-IVR-Integration flow in the Twilio Studio. ![Twilio-1.png](images/Twilio-1.png)
+2. Modeler view of flow. ![Twilio-2.png](images/Twilio-2.png)
 3. The json representation of flow.
 
 ```json
