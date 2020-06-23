@@ -29,4 +29,4 @@ As part of the process, it is required to capture the APS Form values and genera
 
 
 ### References
-1. http://howtobrothers.com/2018/03/03/how-to-set-a-task-listener-on-the-app-designer-visual-editor-in-alfresco-process-services/
+1. https://docs.alfresco.com/process-services1.7/topics/document_templates.html
