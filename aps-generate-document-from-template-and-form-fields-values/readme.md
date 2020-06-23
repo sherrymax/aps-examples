@@ -24,21 +24,6 @@ As part of the process, it is required to capture the APS Form values and genera
 ![Upload-To-ACS-Task-Configuration](images/Upload-To-ACS-Task-Configuration.png)
 9.  Publish/Deploy the App.
 
-### Task Listener Configuration
-1. ScriptTaskListener Event Class
-```
-org.activiti.engine.impl.bpmn.listener.ScriptTaskListener
-```
-2. language
-```
-javascript or groovy depending on your script
-```
-
-3. script
-```
-task.execution.setVariable("requestSubmitter", userInfoBean.getFullName(userInfoBean.getCurrentUser().getId())); task.execution.setVariable("submittedTaskName", task.getName());
-```
-OR as shown below ![below](images/alternate-script-string.png)
 
 ### Run the DEMO
 
