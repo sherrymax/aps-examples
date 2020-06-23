@@ -1,7 +1,7 @@
 #### The project contains the tips required to generate a document with APS Form values
 
 ### Use-Case / Requirement
-As part of the process, it is required to capture the APS Form values and generate a document out of a template.
+As part of the process, it is required to capture the APS Form values and generate a document out of a template and upload to ECM.
 
 ### Prerequisites to run this demo end-2-end
 
