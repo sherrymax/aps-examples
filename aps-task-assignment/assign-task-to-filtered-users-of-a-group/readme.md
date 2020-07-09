@@ -41,10 +41,12 @@ Build a process :
     ```
 
 4. Configure `Review Task` Assignment Property.
+
    ![Task-Assignment-Property](images/2.png)
    ![Task-Assignment-Property-Popup](images/3.png)
 
 5. Setup a group for testing purpose.
+
    ![group](images/4.png)
 
 6. Publish/Deploy the App.
@@ -52,15 +54,19 @@ Build a process :
 ### Run the DEMO
 
 1. Login as one of the group member `Demo User`.
+
    ![login](images/5.png)
 
 2. Submit the request.
+
    ![submit-request](images/6.png)
 
 3. Process advances to `Review Task`.
+
    ![process-diagram](images/7.png)
 
 4. Verify and confirm that `Review Task` is now available for members other than submitter.
+
    ![task-assignment](images/8.png)
 
 ### Tip of the day
