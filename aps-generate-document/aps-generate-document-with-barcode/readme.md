@@ -12,13 +12,14 @@ As part of the process, it is required to generate a document that has a barcode
 1. Install the Bar Code Font in your server.
    [A few barcode fonts are available here](assets/fonts).
    
-   For Unix, 
-   1. Download these fonts to `/usr/local/share/fonts`. 
-      Note: If `fonts` folder doesnt exist, you've to create one `mkdir fonts`.
-   1. Run `yum install fontconfig` 
-   2. Run `fc-cache -f -v`
+2. For Unix, 
+   - Download these fonts to `/usr/local/share/fonts`. 
+      - Note: If `fonts` folder doesnt exist, you've to create one `mkdir fonts`.
+   - Run `yum install fontconfig` 
+   - Run `fc-cache -f -v`
+     - Note: Detailed step-by-step instructions are available [here](https://medium.com/source-words/how-to-manually-install-update-and-uninstall-fonts-on-linux-a8d09a3853b0).
    
-   For Windows, use the font installer.
+3. For Windows, use the font installer.
 
 ### Activiti Setup and Process Deployment
 1. Setup Alfresco Activiti if you don't have one already. Instructions & help available at [Activiti Docs](http://docs.alfresco.com/activiti/docs/), [Alfresco BPM Community](https://community.alfresco.com/community/bpm)
@@ -31,7 +32,7 @@ As part of the process, it is required to generate a document that has a barcode
    
 5. The Generate Document Task : Template with Barcode Placeholder. 
 
-![Generate-Document-Task-Custom-Template](assets/3.png)
+   ![Generate-Document-Task-Custom-Template](assets/3.png)
 [A template is available here](assets/Generate-Doc-Template.docx):
 
 6. The Upload to ACS Task configuration. 
@@ -52,3 +53,4 @@ As part of the process, it is required to generate a document that has a barcode
 1. https://docs.alfresco.com/process-services1.7/topics/document_templates.html
 2. https://medium.com/source-words/how-to-manually-install-update-and-uninstall-fonts-on-linux-a8d09a3853b0
 3. https://command-not-found.com/fc-cache
+4. https://www.unixtutorial.org/how-to-install-ttf-fonts-in-linux/
