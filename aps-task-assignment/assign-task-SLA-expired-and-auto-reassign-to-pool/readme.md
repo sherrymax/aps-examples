@@ -22,7 +22,7 @@ Build a process :
 1. Import the [Reassign-Task-SLA-App.zip](Reassign-Task-SLA-App.zip) app available in this project into APS.
 2. The process flow.  ![Process-Flow](images/1.png)
 
-3. Configure `Review Task` Assignment Property.
+3. Configure `Task In Queue` Assignment Property and make it assigned to `hr-group`.
 
    ![Task-Assignment-Property](images/2.png)
    ![Task-Assignment-Property-Popup](images/3.png)

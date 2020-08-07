@@ -33,7 +33,7 @@ Build a process :
     execution.setVariable('taskassignee', userId);
     ```
 
-4. Configure `Review Task` Assignment Property.
+4. Configure `Task In Queue` Assignment Property and make it assigned to `${taskassignee}` variable.
 
    ![Task-Assignment-Property](images/2.png)
    ![Task-Assignment-Property-Popup](images/3.png)
