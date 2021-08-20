@@ -6,7 +6,7 @@ title: Custom Dashboards and Analytics with Alfresco Process Services
 ## Use-Case / Requirement
 Custom dashboards in Kibana should be built using APS, Kibana and ElasticSearch :
 
-> **Note**: Full credits and thanks to [Ciju Jospeh](https://github.com/cijujoseph) for building this spring-boot application. More details are available at https://github.com/cijujoseph/activiti-analytics-spring-boot.
+> **Note**: Full credits and thanks to [Ciju Joseph](https://github.com/cijujoseph) for building this spring-boot application. More details are available at https://github.com/cijujoseph/activiti-analytics-spring-boot.
 
 ## Prerequisites to run this demo end-2-end
 
@@ -74,7 +74,7 @@ Orca users can start the Kibana container by running the following command.
 Command:
 scp -i my-key.pem activiti-analytics-spring-boot-1.0.0-SNAPSHOT.jar ec2-user@ec2-1-2-3-4.compute-1.amazonaws.com:/home/ec2-user/orca/data
 ```
-> **Note**: Full credits and thanks to [Ciju Jospeh](https://github.com/cijujoseph) for building this spring-boot application. More details are available at https://github.com/cijujoseph/activiti-analytics-spring-boot. 
+> **Note**: Full credits and thanks to [Ciju Joseph](https://github.com/cijujoseph) for building this spring-boot application. More details are available at https://github.com/cijujoseph/activiti-analytics-spring-boot. 
 
 
 3. Note the id of Analytics container
