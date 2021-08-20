@@ -105,6 +105,7 @@ Please wait for sometime for the bpmeventlog index to be created. If it takes <b
    ``` http
    http://localhost:5601
    ```
+   ![Kibana HomePage](assets/kibana-homepage.png)
 2. Select `Management > Index Patterns`
    ![Index Patterns](assets/index-patterns.png)
 3. Create the `Index Pattern` of name `bpmanalyticseventlog-*`
