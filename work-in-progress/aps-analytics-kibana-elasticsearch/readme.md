@@ -105,7 +105,7 @@ If it takes more than 15 minutes, restart db container, to restart the indexing.
 6. Select `Dashboard` and the `Task Dashboard`
 
 ```
-P.S : Custom visualisations and dashboards can be created to display business data.
+P.S : As per use cases, custom visualisations and dashboards can also be created to display business data.
 ```
 
 ### Run the DEMO
