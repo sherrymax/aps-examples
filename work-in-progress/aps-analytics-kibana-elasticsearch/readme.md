@@ -95,7 +95,7 @@ If it takes more than 15 minutes, restart db container, to restart the indexing.
 ```
 
 ### Prepare Kibana Report
-1. Go to `<hostname>:5601` and land into Kibana Homepage.
+1. Go to `hostname:5601` and land into Kibana Homepage.
 2. Select `Management > Index Patterns`
 3. Create the index pattern of name `bpmanalyticseventlog-*`
 4. Select `Management > Saved Objects`
