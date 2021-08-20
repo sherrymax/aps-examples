@@ -125,7 +125,6 @@ Please wait for sometime for the bpmeventlog index to be created. If it takes <b
 
 ## Run the DEMO
 
-
 ## References
 1. https://github.com/cijujoseph/activiti-analytics-spring-boot
 2. https://www.tutorialspoint.com/elasticsearch/elasticsearch_query_dsl.htm
