@@ -115,6 +115,7 @@ Please wait for sometime for the bpmeventlog index to be created. If it takes <b
 5. Select `Import` and import the following JSON
     * [task-dashboard-kibana.json](assets/task-dashboard-kibana.json)
     * [task-search-kibana.json](assets/task-search-kibana.json)
+    * [kibana-import-everything.json](assets/kibana-import-everything.json)
     ![Saved Objects](assets/saved-objects.png)
 6. Select `Dashboard` and the `Task Dashboard`
    ![Task Dashboard](assets/task-dashboard.png)
