@@ -103,7 +103,7 @@ Please wait for sometime for the bpmeventlog index to be created. If it takes <b
 ### 8. Prepare Kibana Dashboard
 1. Go to Kibana Homepage.
    ``` http
-   http://localhost:5601
+   http://<my-hostname>:5601
    ```
    ![Kibana HomePage](assets/kibana-homepage.png)
 2. Select `Management > Index Patterns`
