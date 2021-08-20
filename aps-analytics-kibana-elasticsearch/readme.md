@@ -16,14 +16,14 @@ Custom dashboards in Kibana should be built using APS, Kibana and ElasticSearch 
 
 ## Configuration Steps
 ### 1. Launch an EC2 Instance from an AMI Image
-Orca users has to use following AMI Image to lanuch an instance
+Orca users has to use following AMI Image to lanuch an instance.
 ```
 AMI Name : jwhyte_orca_3.2.2
 AMI Id : ami-0617702d4f0917a5a
 ```
 
 ### 2. Login to Okta and Start containers
-Orca users has to use following AMI Image to lanuch an instance
+Orca users has to login after instance is launched.
 ```
 ./orca.py login okta
 ./orca.py start
@@ -35,11 +35,11 @@ Orca users has to use following AMI Image to lanuch an instance
 Login as admin@app.activiti.com/Alfresco01 to upload the APS license.
 ```
 2. Download and backup the APS Process Apps.
-[A few examples are available here](assets/APS-apps)
+[A few examples are available here.](assets/APS-apps)
 
 
 ### 4. Rebuild ACS Container (Optional Step)
-Orca users who see the Orange color community login page has to destroy db containers using the following command
+Orca users who see the Orange color community login page has to destroy db containers using the following command.
 ```
 ./orca.py destroy db -f
 
