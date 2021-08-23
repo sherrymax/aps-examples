@@ -1,6 +1,4 @@
----
-title: Custom Dashboards and Analytics with Alfresco Process Services
----
+
 #### The project contains all the components required to build custom reports using Kibana and ElasticSearch
 
 ## Use-Case / Requirement
