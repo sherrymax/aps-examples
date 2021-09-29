@@ -4,6 +4,10 @@
 * APS stencil should list all users in APS.
 * APS users could select multiple values (users) from dropdown.
 
+https://www.buymeacoffee.com/sherrymathews
+https://github.com/sherrymax/aps-examples/blob/master/bmc.png
+
+![https://github.com/sherrymax/aps-examples/blob/master/bmc.png](https://github.com/sherrymax/aps-examples/blob/master/bmc.png)
 
 ## Form runtime template
 ```html
