@@ -4,8 +4,8 @@
 * APS stencil should list all users in APS.
 * APS users could select multiple values (users) from dropdown.
 
-[Buy me a Coffee!](https://www.buymeacoffee.com/sherrymathews)
-[<img alt="Buy me a coffee" width="250px" src="https://github.com/sherrymax/aps-examples/blob/master/bmc.png?raw=true" />](https://www.buymeacoffee.com/sherrymathews)
+[Buy me a Coffee!](https://www.buymeacoffee.com/sherrymathews) :) ☕ 🍻 🎉 
+[<br/><img alt="Buy me a coffee" width="250px" src="https://github.com/sherrymax/aps-examples/blob/master/bmc.png?raw=true" />](https://www.buymeacoffee.com/sherrymathews)
 
 
 ## Form runtime template
