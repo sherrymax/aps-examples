@@ -4,10 +4,6 @@
 * APS stencil should list all users in APS.
 * APS users could select multiple values (users) from dropdown.
 
-[Buy me a Coffee!](https://www.buymeacoffee.com/sherrymathews) 😉 ☕ 🍻 🎉 
-[<br/><img alt="Buy me a coffee" width="250px" src="https://github.com/sherrymax/aps-examples/blob/master/bmc.png?raw=true" />](https://www.buymeacoffee.com/sherrymathews)
-
-
 ## Form runtime template
 ```html
 <div ng-controller="MultiUserSelectController">
@@ -395,3 +391,7 @@ A runtime image of this stencil
 ## References
 1. https://docs.alfresco.com/process-services1.6/topics/custom_form_fields.html
 2. https://docs.alfresco.com/process-services1.6/topics/example_3_dynamic_pie_chart.html
+
+## Did this help you ? 
+[Buy me a Coffee, if you find this helpful!](https://www.buymeacoffee.com/sherrymathews) 😉 ☕ 🍻 🎉 
+[<br/><img alt="Buy me a coffee" width="250px" src="https://github.com/sherrymax/aps-examples/blob/master/bmc.png?raw=true" />](https://www.buymeacoffee.com/sherrymathews)
