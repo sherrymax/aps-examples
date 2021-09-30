@@ -71,5 +71,5 @@ Build a process :
    2. https://docs.alfresco.com/process-services/latest/using/process/bpmn/#structural-components
 
    ## Did this help you ?
-   [Buy me a Coffee, if you find this helpful!](https://www.buymeacoffee.com/sherrymathews) 😉 ☕ 🍻 🎉
+   [Buy me a coffee, if you find this helpful!](https://www.buymeacoffee.com/sherrymathews) 😉 ☕ 🍻 🎉
    [<br/><img alt="Buy me a coffee" width="250px" src="https://github.com/sherrymax/aps-examples/blob/master/bmc.png?raw=true" />](https://www.buymeacoffee.com/sherrymathews)
