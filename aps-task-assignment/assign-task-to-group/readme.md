@@ -64,5 +64,5 @@ Build a process to select a `Reviewer group` and assign the `Review Task` to tha
    4. In APS, this service is available as ` List<Group> groups = groupServiceImpl.getGroupByNameAndTenantId('FBIAnalyst', 1L);`
 
 ### References
-1. http://docs.alfresco.com/activiti/docs/user-guide/1.5.0/
-2. http://docs.alfresco.com/activiti/docs/user-guide/1.5.0/#_assigning_tasks
+1. https://docs.alfresco.com/process-services/latest/using/process/
+2. https://docs.alfresco.com/process-services/latest/using/process/bpmn/#activities
