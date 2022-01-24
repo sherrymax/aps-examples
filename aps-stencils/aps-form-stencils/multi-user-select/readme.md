@@ -29,7 +29,9 @@
 ```
 
 # Custom Component Controller
+>The EC2 instance URL is hardcoded in the angular module controller. Please update it as per your need.
 <details>
+
   <summary>Click to expand!</summary>
 
 ``` typescript 
@@ -374,6 +376,7 @@ angular.module('activitiApp').directive('multiselectPopup', ['$document', functi
 ```
 </details>
 
+<br/>
 
 ## Runtime View
 A runtime image of this stencil
@@ -387,6 +390,11 @@ A runtime image of this stencil
 
 * [A sample process app can be downloaded here.](assets/multi-select.zip)
 * [The stencil can be downloaded here.](assets/multiuser-select-stencil.zip)
+
+## Troubleshooting
+   EC2 instance URL is hardcoded in the angular module controller of APS Form Stencil. If the user list is empty, please make sure to update this URL as per your need.
+   <br/><br/>
+   >P.S: The [APS Form Stencil](https://github.com/sherrymax/aps-examples/tree/master/aps-stencils/aps-form-stencils) for selecting multiple users is [available here](https://github.com/sherrymax/aps-examples/tree/master/aps-stencils/aps-form-stencils/multi-user-select#custom-component-controller).
 
 ## References
 1. https://docs.alfresco.com/process-services1.6/topics/custom_form_fields.html
