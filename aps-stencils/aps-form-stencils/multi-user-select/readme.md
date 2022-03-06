@@ -1,10 +1,12 @@
-#### FORM STENCILS for selecting multiple users from multi-select-dropdown in APS.
+#### FORM STENCILS for selecting multiple users from multi-select-dropdown in APS
 
 ### Use case
+
 * APS stencil should list all users in APS.
 * APS users could select multiple values (users) from dropdown.
 
 ## Form runtime template
+
 ```html
 <div ng-controller="MultiUserSelectController">
     <multiselect multiple="true" ng-model="selectedUsers"
@@ -29,12 +31,13 @@
 ```
 
 # Custom Component Controller
+
 >The EC2 instance URL is hardcoded in the angular module controller. Please update it as per your need.
 <details>
 
   <summary>Click to expand!</summary>
 
-``` typescript 
+``` typescript
 angular.module('activitiApp')
     .controller('MultiUserSelectController', ['$rootScope', '$scope', '$timeout', '$http',
         function ($rootScope, $scope, $timeout, $http) {
@@ -374,32 +377,36 @@ angular.module('activitiApp').directive('multiselectPopup', ['$document', functi
     }
 }]);
 ```
+
 </details>
 
 <br/>
 
 ## Runtime View
+
 A runtime image of this stencil
 ![A runtime image of this stencil](assets/4.png)
 ![A runtime image of this stencil](assets/5.png)
 ![A runtime image of this stencil](assets/6.png)
 ![A runtime image of this stencil](assets/7.png)
 
-
 ## Stencil
 
-* [A sample process app can be downloaded here.](assets/multi-select.zip)
+* [A sample process app can be downloaded here.](assets/multi-user-app.zip)
 * [The stencil can be downloaded here.](assets/multiuser-select-stencil.zip)
 
 ## Troubleshooting
+
    EC2 instance URL is hardcoded in the angular module controller of APS Form Stencil. If the user list is empty, please make sure to update this URL as per your need.
    <br/><br/>
    >P.S: The [APS Form Stencil](https://github.com/sherrymax/aps-examples/tree/master/aps-stencils/aps-form-stencils) for selecting multiple users is [available here](https://github.com/sherrymax/aps-examples/tree/master/aps-stencils/aps-form-stencils/multi-user-select#custom-component-controller).
 
 ## References
-1. https://docs.alfresco.com/process-services1.6/topics/custom_form_fields.html
-2. https://docs.alfresco.com/process-services1.6/topics/example_3_dynamic_pie_chart.html
 
-## Did this help you ? 
-[Buy me a coffee, if you find this helpful!](https://www.buymeacoffee.com/sherrymathews) 😉 ☕ 🍻 🎉 
+1. <https://docs.alfresco.com/process-services1.6/topics/custom_form_fields.html>
+2. <https://docs.alfresco.com/process-services1.6/topics/example_3_dynamic_pie_chart.html>
+
+## Did this help you ?
+
+[Buy me a coffee, if you find this helpful!](https://www.buymeacoffee.com/sherrymathews) 😉 ☕ 🍻 🎉
 [<br/><img alt="Buy me a coffee" width="250px" src="https://github.com/sherrymax/aps-examples/blob/master/bmc.png?raw=true" />](https://www.buymeacoffee.com/sherrymathews)
