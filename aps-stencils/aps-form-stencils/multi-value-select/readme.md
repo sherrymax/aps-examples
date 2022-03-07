@@ -3,25 +3,25 @@
 ### Use case
 
 * APS stencil should list all users in APS.
-* APS users could select multiple values (users) from dropdown.
+* APS users could select multiple values from dropdown.
 
 ## Form runtime template
 
 ```html
-<div ng-controller="MultiUserSelectController">
-    <multiselect multiple="true" ng-model="selectedUsers"
-        options="(c.firstName?c.firstName:'') + ' ' + (c.lastName?c.lastName:'') for c in masterUsersList"
+<div ng-controller="MultiValueSelectController">
+    <multivalueselect multiple="true" ng-model="selectedValues"
+        options="c.label for c in masterList"
         change="selected()">
-    </multiselect>
+    </multivalueselect>
     <br />
 
-    <div ng-if="selectedUsers.length > 0">
-        <b>Selected Users</b>
+    <div ng-if="selectedValues.length > 0">
+        <b>Selected Values</b>
         <table>
             <tbody>
-                <tr ng-repeat="s in selectedUsers">
+                <tr ng-repeat="s in selectedValues">
                     <td style="padding-left:0.25em">
-                        {{s.firstName?s.firstName:''}} {{s.lastName?s.lastName:''}} ({{s.email}})
+                        {{s.label?s.label:'Label Unavailable'}}
                     </td>
                 </tr>
             </tbody>
@@ -32,39 +32,64 @@
 
 # Custom Component Controller
 
->The EC2 instance URL is hardcoded in the angular module controller. Please update it as per your need.
+>The drop down values has to be passed in as JSON format. So the list variable should to be converted to JSON before sending it to FORM.
 <details>
 
   <summary>Click to expand!</summary>
 
 ``` typescript
 angular.module('activitiApp')
-    .controller('MultiUserSelectController', ['$rootScope', '$scope', '$timeout', '$http',
+    .controller('MultiValueSelectController', ['$rootScope', '$scope', '$timeout', '$http',
         function ($rootScope, $scope, $timeout, $http) {
             console.log('SignModalCtrl instantiated');
             console.log($scope)
     
-            $scope.selectedUsers = [];
+            $scope.selectedValues = [];
+            
 
             var fieldVal = $scope.field.value
             if(fieldVal !== null){
-                $scope.selectedUsers = JSON.parse(fieldVal);
+                $scope.selectedValues = JSON.parse(fieldVal);
             }
             
             console.log("fieldVal >>>");
             console.log(fieldVal);
-    
+
             $scope.name = 'World';
+            
+            /*
+            $scope.masterList = [{
+                 id: 1,
+                 name: 'Audi',
+                 label: 'Audi-label'
+             }, {
+                 id: 2,
+                 name: 'BMW',
+                 label: 'BMW-label'
+             }, {
+                 id: 3,
+                 name: 'Honda',
+                 label: 'Honda-label'
+             }];
+             */
+            
+            $scope.masterList = JSON.parse($scope.field.params.customProperties.masterList.value);
+            
+            console.dir($scope.masterList);
+            
+            /* Use this to get values from via REST call
+            var getValuesURL = 'http://demo:demo@'+$scope.field.params.customProperties.urlToGetValuesFrom+'/activiti-app/api/enterprise/users';
+            console.log('getValuesURL --> '+getValuesURL);
     
     
-            $http.get('http://demo:demo@ec2-52-91-9-209.compute-1.amazonaws.com/activiti-app/api/enterprise/users').
+            $http.get(getValuesURL).
             then(function (response) {
                 console.log(response.data.data);
-                //$scope.cars = Array.from(response.data.data);
-                $scope.masterUsersList = Array.from(response.data.data);
+                $scope.masterList = Array.from(response.data.data);
             }).catch(function (response) {
                 console.error(' error', response.status, response.data);
             });
+            */
     
             // Register this controller to listen to the form extensions methods
             $scope.registerCustomFieldListener(this);
@@ -76,22 +101,22 @@ angular.module('activitiApp')
             // Setting the value before completing the task so it's properly stored
             this.formBeforeComplete = function (form, outcome, scope) {
                 console.log('Before form complete');
-                $scope.field.value = JSON.stringify($scope.selectedUsers);
-                // $scope.field.value = $scope.selectedUsers;
+                $scope.field.value = JSON.stringify($scope.selectedValues);
+                // $scope.field.value = $scope.selectedValues;
             };
             
             $scope.uncheckItem = function ($index) {
                 console.log('Going to delete item @ -->'+$index);
-                $scope.selectedUsers.splice($index, 1);
-                $scope.selectedUsers[$index].checked = false;
+                $scope.selectedValues.splice($index, 1);
+                $scope.selectedValues[$index].checked = false;
                 //if($scope && $scope.items)
                 //console.log('$scope.items.length -->'+$scope.items.length);
                 //$scope.items[0].checked = false;
                 //multiselect.items[0].checked = false;
                 
-                // angular.forEach($scope.selectedUsers, function (item) {
+                // angular.forEach($scope.selectedValues, function (item) {
                     //item.checked = false;
-                    //var index = $scope.selectedUsers.indexOf(item);
+                    //var index = $scope.selectedValues.indexOf(item);
                 // });
                 //multiselect.sendMessage('Sending from controller ###');
             };
@@ -128,11 +153,11 @@ angular.module('activitiApp')
         };
     }]);
 
-angular.module('activitiApp').directive('multiselect', ['$parse', '$document', '$compile', 'optionParser',
+angular.module('activitiApp').directive('multivalueselect', ['$parse', '$document', '$compile', 'optionParser',
 
     function ($parse, $document, $compile, optionParser) {
 
-        console.log('*** multiselect Directive instantiated');
+        console.log('*** multivalueselect Directive instantiated');
 
         return {
             restrict: 'E',
@@ -155,7 +180,7 @@ angular.module('activitiApp').directive('multiselect', ['$parse', '$document', '
                     scope.$destroy();
                 });
 
-                var popUpEl = angular.element('<multiselect-popup></multiselect-popup>');
+                var popUpEl = angular.element('<multivalueselect-popup></multivalueselect-popup>');
 
                 //required validator
                 if (attrs.required || attrs.ngRequired) {
@@ -327,17 +352,15 @@ angular.module('activitiApp').directive('multiselect', ['$parse', '$document', '
     }
 ]);
 
-</details>
+angular.module('activitiApp').directive('multivalueselectPopup', ['$document', function ($document) {
 
-
-angular.module('activitiApp').directive('multiselectPopup', ['$document', function ($document) {
-
-    console.log('*** multiselectPopup Directive Instantiated ');
+    console.log('*** multivalueselectPopup Directive Instantiated ');
     return {
         restrict: 'E',
         scope: false,
         replace: true,
-        template: '<div class="dropdown"><button class="btn-old" style="width: 100%; background-color: #36A7C4;" ng-click="toggleSelect()" ng-disabled="disabled" ng-class="{\'error\': !valid()}"><span class="pull-left">{{header}}</span><span class="caret pull-right"></span></button><ul class="dropdown-menu" style="width:100%"><li><input class="input-block-level" style="width:100%" type="text" ng-model="searchText.label" autofocus="autofocus" placeholder="Filter" /></li><li ng-show="multiple"><button class="btn-link btn-small" ng-click="checkAll()"><i class="glyphicon glyphicon-ok" style="color:GREEN"></i> Check all</button><button class="btn-link btn-small" ng-click="uncheckAll()"><i class="glyphicon glyphicon-remove" style="color:RED"></i> Uncheck all</button></li><li ng-repeat="i in items | filter:searchText"><a ng-click="select(i); focus()"><i ng-class="{\'glyphicon glyphicon-remove-circle text-danger\': i.checked, \'glyphicon glyphicon-ok-circle text-success\': !i.checked}" ></i>  {{" "+i.label}}</a></li></ul></div>',
+        //template: '<div class="dropdown"><button class="btn-old" style="width: 100%; background-color: #36A7C4;" ng-click="toggleSelect()" ng-disabled="disabled" ng-class="{\'error\': !valid()}"><span class="pull-left">{{header}}</span><span class="caret pull-right"></span></button><ul class="dropdown-menu" style="width:100%"><li><input class="input-block-level" style="width:100%" type="text" ng-model="searchText.label" autofocus="autofocus" placeholder="Filter" /></li><li ng-show="multiple"><button class="btn-link btn-small" ng-click="checkAll()"><i class="glyphicon glyphicon-ok"></i> Check all</button><button class="btn-link btn-small" ng-click="uncheckAll()"><i class="glyphicon glyphicon-remove"></i> Uncheck all</button></li><li ng-repeat="i in items | filter:searchText"><a ng-click="select(i); focus()"><i ng-class="{\'glyphicon glyphicon-remove-circle\': i.checked, \'glyphicon glyphicon-ok-circle\': !i.checked}" ></i>  {{" "+i.label}}</a></li></ul></div>',
+        template: '<div class="dropdown"><button class="btn-old" style="width: 100%; background-color: #FAFAFB;" ng-click="toggleSelect()" ng-disabled="disabled" ng-class="{\'error\': !valid()}"><span class="pull-left">{{header}}</span><span class="caret pull-right"></span></button><ul class="dropdown-menu" style="width:100%"><li><input class="input-block-level" style="width:100%" type="text" ng-model="searchText.label" autofocus="autofocus" placeholder="Filter" /></li><li ng-show="multiple"><button class="btn-link btn-small" ng-click="checkAll()"><i class="glyphicon glyphicon-ok" style="color:BLACK"></i> Check all</button><button class="btn-link btn-small" ng-click="uncheckAll()"><i class="glyphicon glyphicon-remove" style="color:BLACK"></i> Uncheck all</button></li><li ng-repeat="i in items | filter:searchText"><a ng-click="select(i); focus()"><i ng-class="{\'glyphicon glyphicon-check\': i.checked, \'glyphicon glyphicon-unchecked\': !i.checked}" ></i>  {{" "+i.label}}</a></li></ul></div>',
         
         link: function (scope, element, attrs) {
 
@@ -392,12 +415,11 @@ A runtime image of this stencil
 
 ## Stencil
 
-* [A sample process app can be downloaded here.](assets/multi-user-app.zip)
+* [A sample process app can be downloaded here.](assets/multi-select-app.zip)
 * [The stencil can be downloaded here.](assets/multiuser-select-stencil.zip)
 
 ## Troubleshooting
 
-   EC2 instance URL is hardcoded in the angular module controller of APS Form Stencil. If the user list is empty, please make sure to update this URL as per your need.
    <br/><br/>
    >P.S: The [APS Form Stencil](https://github.com/sherrymax/aps-examples/tree/master/aps-stencils/aps-form-stencils) for selecting multiple users is [available here](https://github.com/sherrymax/aps-examples/tree/master/aps-stencils/aps-form-stencils/multi-user-select#custom-component-controller).
 
