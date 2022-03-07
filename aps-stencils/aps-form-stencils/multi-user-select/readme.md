@@ -398,7 +398,7 @@ A runtime image of this stencil
 ## Troubleshooting
 
    <br/><br/>
-   >P.S: The [APS Form Stencil](https://github.com/sherrymax/aps-examples/tree/master/aps-stencils/aps-form-stencils) for selecting multiple users is [available here](https://github.com/sherrymax/aps-examples/tree/master/aps-stencils/aps-form-stencils/multi-user-select#custom-component-controller).
+   >P.S: The [APS Form Stencil](https://github.com/sherrymax/aps-examples/tree/master/aps-stencils/aps-form-stencils) for selecting multiple values is [available here](https://github.com/sherrymax/aps-examples/tree/master/aps-stencils/aps-form-stencils/multi-value-select).
 
 ## References
 
