@@ -32,7 +32,7 @@
 
 # Custom Component Controller
 
->The EC2 instance URL is hardcoded in the angular module controller. Please update it as per your need.
+>The hostname is an input parameter of the stencil. Please update it as per your need.
 <details>
 
   <summary>Click to expand!</summary>
@@ -397,7 +397,6 @@ A runtime image of this stencil
 
 ## Troubleshooting
 
-   EC2 instance URL is hardcoded in the angular module controller of APS Form Stencil. If the user list is empty, please make sure to update this URL as per your need.
    <br/><br/>
    >P.S: The [APS Form Stencil](https://github.com/sherrymax/aps-examples/tree/master/aps-stencils/aps-form-stencils) for selecting multiple users is [available here](https://github.com/sherrymax/aps-examples/tree/master/aps-stencils/aps-form-stencils/multi-user-select#custom-component-controller).
 
