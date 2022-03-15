@@ -2,7 +2,10 @@
 
 ### Use-Case / Requirement
 
-The user should download a document from ACS and open it in APS Forms File Viewer.
+The user should able to :
+
+1. Programatically download contents from ACS
+2. Open and view those files in APS Forms File Viewer.
 
 ### Prerequisites to run this demo end-2-end
 
@@ -18,10 +21,10 @@ The user should download a document from ACS and open it in APS Forms File Viewe
 2. Import the [Display-ACS-Content-in-APS.zip](assets/Display-ACS-Content-in-APS.zip) app available in this project into APS.
 3. The process flow.  ![Process-Flow](assets/1.png)
 4. Process Variables ![Process-Variables](assets/3.png)
-4. Start Form configuration properties ![Start-Form-Config](assets/2.png)
-5. Start Form ![Start Form](assets/5.png)
-6. Groovy Script to fetch Alfresco Content ![Groovy-Script](assets/4.png)
-10. Groovy Script
+5. Start Form configuration properties ![Start-Form-Config](assets/2.png)
+6. Start Form ![Start Form](assets/5.png)
+7. Groovy Script to fetch Alfresco Content ![Groovy-Script](assets/4.png)
+8. Groovy Script
 
     ``` groovy
     import org.apache.http.client.methods.HttpGet;
@@ -70,12 +73,12 @@ The user should download a document from ACS and open it in APS Forms File Viewe
 
     ```
 
-7. Document Uploader Properties.  ![Document-Uploader-Properties](assets/6.png)
-7. Document Uploader Visibility.  ![Document-Uploader-Visibility](assets/7.png)
-8. Display Content Task. ![Display-Content-Task](assets/8.png)
-8. Display Content Form. ![Display-Content-Form](assets/9.png)
-8. Display Content Form Properties. ![Display-Content-Form-Properties](assets/8.png)
-11. Publish/Deploy the App.
+9. Document Uploader Properties.  ![Document-Uploader-Properties](assets/6.png)
+10. Document Uploader Visibility.  ![Document-Uploader-Visibility](assets/7.png)
+11. Display Content Task. ![Display-Content-Task](assets/8.png)
+12. Display Content Form. ![Display-Content-Form](assets/9.png)
+13. Display Content Form Properties. ![Display-Content-Form-Properties](assets/8.png)
+14. Publish/Deploy the App.
 
 ### Run the DEMO
 
