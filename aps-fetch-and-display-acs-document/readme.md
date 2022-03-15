@@ -4,7 +4,7 @@
 
 The user should able to :
 
-1. Programatically download contents from ACS
+1. Programatically download contents from ACS (using REST API GET call)
 2. Open and view those files in APS Forms File Viewer.
 
 ### Prerequisites to run this demo end-2-end
