@@ -13,7 +13,8 @@ The user should able to :
 
 ## Configuration Steps
 
-> The whitelisting of beans is a mandatory step for the correct working of beans used in GROOVY script. More details at <https://docs.alfresco.com/process-services/latest/develop/dev-ext/#spring-beans>
+> The whitelisting of beans is a mandatory step for the correct working of beans used in GROOVY script.
+More details at <https://docs.alfresco.com/process-services/latest/develop/dev-ext/#spring-beans>
 
 ### Activiti Setup and Process Deployment
 
