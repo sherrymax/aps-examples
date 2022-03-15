@@ -73,9 +73,9 @@ The user should able to :
 
     ```
 
-9. Document Uploader Properties.  ![Document-Uploader-Properties](assets/6.png)
-10. Document Uploader Visibility.  ![Document-Uploader-Visibility](assets/7.png)
-11. Display Content Task. ![Display-Content-Task](assets/8.png)
+9. Start Form - Document Uploader Properties.  ![Document-Uploader-Properties](assets/6.png)
+10. Start Form - Document Uploader Visibility.  ![Document-Uploader-Visibility](assets/7.png)
+11. Display Content Human Task. ![Display-Content-Task](assets/8.png)
 12. Display Content Form. ![Display-Content-Form](assets/9.png)
 13. Display Content Form Properties. ![Display-Content-Form-Properties](assets/8.png)
 14. Publish/Deploy the App.
