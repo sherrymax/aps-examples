@@ -52,7 +52,7 @@ The user should able to :
     aps_docVariableName = "docContents"; 
     User aps_user = userService.findActiveUserByEmail("admin@app.activiti.com");  // This could be any user with the rights to create APS variables.
 
-    docid = "a0e2c807-0701-40d1-b1e3-72e3f7157706"
+    docid = "a0e2c807-0701-40d1-b1e3-72e3f7157706" //Replace with desired node-id.
     apiGetFile = "http://<acs-hostname>/alfresco/api/-default-/public/alfresco/versions/1/nodes/" + docid + "/content?attachment=true"
 
     HttpGet reqGet = new HttpGet(apiGetFile);
