@@ -1,4 +1,4 @@
-## Videos explaining Alfresco Process Service and its Enterprise features.
+## Videos explaining Alfresco Process Service and its Enterprise features
 
 - A deep dive Into Alfresco Process Services
 

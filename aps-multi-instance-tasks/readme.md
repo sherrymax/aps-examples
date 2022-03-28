@@ -1,23 +1,25 @@
-#### The project contains all the components required to create multi-instance tasks and assign to selected users from a multi-list.
+#### The project contains all the components required to create multi-instance tasks and assign to selected users from a multi-list
 
 ### Use-Case / Requirement
+
 Build a process :
+
 1. User should be able to select multiple users from a multi-select dropdown that lists all users in APS.
 2. A multi-instance task (parallel) should be created.
 3. These multiple instances of same task should be assigned to all selected users.
-
 
 ### Prerequisites to run this demo end-2-end
 
 * Alfresco Process Services (powered by Activiti) (Version 1.9 and above) - If you don't have it already, you can download a 30 day trial from [Alfresco Process Services (APS)](https://www.alfresco.com/products/business-process-management/alfresco-activiti).Instructions & help available at [Activiti Docs](http://docs.alfresco.com/activiti/docs/), [Alfresco BPM Community](https://community.alfresco.com/community/bpm)
 
-
 ## Configuration Steps
 
 ### Activiti Setup and Process Deployment
+
 1. Import the [multi-user.zip](assets/multi-user.zip) app available in this project into APS.
 2. The process flow.  ![Process-Flow](assets/1.png)
 3. The Javascript configuration.
+
    ``` javascript
     var users = execution.getVariable('selectmultiplereviewers');
    print("users:" + users);
@@ -56,7 +58,6 @@ Build a process :
    ![submit-request](assets/5.png)
    ![submit-request](assets/6.png)
 
-
 3. Users are now selected.
 
    ![process-diagram](assets/7.png)
@@ -65,11 +66,12 @@ Build a process :
 
    ![task-assignment](assets/8.png)
 
+## References
 
-   ## References
-   1. https://docs.alfresco.com/process-services/latest/using/process/bpmn/#user-task
-   2. https://docs.alfresco.com/process-services/latest/using/process/bpmn/#structural-components
+   1. <https://docs.alfresco.com/process-services/latest/using/process/bpmn/#user-task>
+   2. <https://docs.alfresco.com/process-services/latest/using/process/bpmn/#structural-components>
 
-   ## Did this help you ?
+## Did this help you ?
+
    [Buy me a coffee, if you find this helpful!](https://www.buymeacoffee.com/sherrymathews) 😉 ☕ 🍻 🎉
    [<br/><img alt="Buy me a coffee" width="250px" src="https://github.com/sherrymax/aps-examples/blob/master/bmc.png?raw=true" />](https://www.buymeacoffee.com/sherrymathews)
