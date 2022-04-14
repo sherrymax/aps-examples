@@ -1,8 +1,4 @@
-## Videos explaining Alfresco Process Service and its Enterprise features
-
-<br/><hr/><br/>
-
-### Alfresco Process Services - Overview
+## Alfresco Process Services - Overview
 
 - A deep dive Into Alfresco Process Services
 
@@ -12,7 +8,7 @@
 
 <br/><hr/><br/>
 
-### Alfresco Process Services - Enterprise
+## Alfresco Process Services - Enterprise
 
 - Whats all in Enterprise Features List ?
 
