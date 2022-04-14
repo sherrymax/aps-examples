@@ -1,4 +1,4 @@
-<br/><br/>
+<br/>
 
 ## Alfresco Process Services - Overview
 
