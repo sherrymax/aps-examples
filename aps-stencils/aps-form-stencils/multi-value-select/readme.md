@@ -425,8 +425,8 @@ A runtime image of this stencil
 
 ## References
 
-1. <https://docs.alfresco.com/process-services1.6/topics/custom_form_fields.html>
-2. <https://docs.alfresco.com/process-services1.6/topics/example_3_dynamic_pie_chart.html>
+1. <https://docs.alfresco.com/process-services/latest/develop/dev-ext/#custom-form-fields>
+2. <https://docs.alfresco.com/process-services/latest/develop/dev-ext/#start-and-task-form-customization>
 
 ## Did this help you ?
 
