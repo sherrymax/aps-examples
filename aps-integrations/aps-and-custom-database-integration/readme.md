@@ -24,6 +24,7 @@ Click + (plus icon) and configure the following settings (see the activiti-app.p
 
 ## <a name="postgresql"></a>PostGreSQL DB
 ![Postgres](postgres.png)
+![Postgres](postgres-2.png)
 
 ### References
 1. http://docs.alfresco.com/activiti/docs/user-guide/1.5.0/
