@@ -87,6 +87,8 @@ Once authenticated into Developer Account, the URL will change and `AUTHORIZATIO
 
 > Note down the `AUTHORIZATION CODE`.
 
+> The `AUTHORIZATION CODE` will expire in 2 minutes. Within that time, it should be used to generate the `ACCESS TOKEN`
+
 ### 5. Generate the ENCODED KEY in POSTMAN
 
 Encoded Key has to be generated using the `Integration Key` and `Secret Key` that we've already noted down.
@@ -128,6 +130,8 @@ Import (Right Click > Save Link As) and Run the [postman collection available he
 ![DS11](assets/11.png)
 
 > Note down the `ACCESS TOKEN`.
+
+> The `ACCESS TOKEN` will expire in 30 minutes. Within that time, it should be used in APS Endpoint and Demo Execution.
 
 ### 7. Configure APS Endpoint for DocuSign
 
