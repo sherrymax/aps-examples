@@ -85,7 +85,7 @@ Paste the above URL in a browser.
 
 Once authenticated into Developer Account, the URL will change and `AUTHORIZATION CODE` will be part of the URL.
 
-Note down the `AUTHORIZATION CODE` for the next step.
+> Note down the `AUTHORIZATION CODE`.
 
 ### 5. Generate the ENCODED KEY in POSTMAN
 
@@ -108,11 +108,11 @@ Create a GET request in POSTMAN<br/>
 Check the POSTMAN console (at the bottom of window) for Encoded Key.
 ![DS10](assets/10.png)
 
-> Note down this `ENCODED KEY`.
+> Note down the `ENCODED KEY`.
 
 If needed, you can decode the Encoded Key [at this website](https://www.base64decode.org/) to verify its accurracy.
 
-### 6. Generate the Access Token using Authorization Code in POSTMAN
+### 6. Generate the ACCESS TOKEN using Authorization Code in POSTMAN
 
 Required Values:
 
@@ -127,7 +127,7 @@ Import (Right Click > Save Link As) the [global valriables available here](asset
 
 ![DS11](assets/11.png)
 
-> Note down the `Access Token`.
+> Note down the `ACCESS TOKEN`.
 
 ### 7. Configure APS Endpoint for DocuSign
 
