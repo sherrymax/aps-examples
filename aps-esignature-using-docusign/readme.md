@@ -23,9 +23,7 @@ As part of APS workflow, documents should be electronically signed using DocuSig
 
 ![DS3](assets/3.png)
 
-Note down the following
-
-* API Account ID
+> Note down the `API Account ID`
 
 Create an App by clicking the `Add App and Integration Key` button.
 
@@ -35,12 +33,15 @@ Create the App.
 
 ![DS5](assets/5.png)
 
+``` html
 Note down the following :
 
 * Secret Key
 * Integration Key
 * Redirect URI
 * Authentication Type
+
+```
 
 Click Save and the DocuSign App will be created.
 
