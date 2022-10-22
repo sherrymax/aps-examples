@@ -1,0 +1,36 @@
+{
+	"id": "58636447-9be4-47c5-8e1b-32d9fb5a41f3",
+	"values": [
+		{
+			"key": "authorizationCodeFromURL",
+			"value": "eyJ0eXAiOiJNVCIsImFsZyI6IlJTMjU2Iiwia2lkIjoiNjgxODVmZjEtNGU1MS00Y2U5LWFmMWMtNjg5ODEyMjAzMzE3In0.AQoAAAABAAYABwCAsHPjcrPaSAgAgDz6KnOz2kgCAAFxrXH9Fo1MrDW_yxrTOHwVAAEAAAAYAAIAAAAFAAAAHQAAAA0AJAAAADQyMzAyODlhLWZlNjctNDBkMS1iODkwLTYwNGE5YmM0YzMyNCIAJAAAADQyMzAyODlhLWZlNjctNDBkMS1iODkwLTYwNGE5YmM0YzMyNDcAjLbd2eGqLEiM4f6ytYmsbjAAgFsjL22z2kg.GlFpXj3H8FJDabifiS6-vmtP0cuOqH1Q5XHw5XA5rrGx1i2QvRo5wX4FZBp7dWx7qmSniLlPuW4WcbojCJFUvsHLmHniw8RxWt4acqyCBQJm96APXeb38cBzqMPq-3118ElJbJH03nYwSNfpT2VKpMOVTZS8xvGMdctZVgxnCrV1SAw9bcxuAZ0DQ2OQw5VNH_74THkz_iwjZ_8orky5seGNfGRjf6aOU6QwfzTSigDh-vuEEsI8Wr48uD5rz9LEfuoSmlTAsq4wtGtCfpvi0xQCK5ZK_NdcSaxaMQaAUfcg3dZ2alLNAn4ccPUnxvFys2TtK12s4GjBdc9YogriIg",
+			"enabled": true
+		},
+		{
+			"key": "integrationKey",
+			"value": "4230289a-fe67-40d1-b890-604a9bc4c324",
+			"type": "default",
+			"enabled": true
+		},
+		{
+			"key": "secretKey",
+			"value": "a07ffbc3-b55d-4909-8776-b155833662a8",
+			"type": "default",
+			"enabled": true
+		},
+		{
+			"key": "hostenv",
+			"value": "account-d.docusign.com",
+			"enabled": true
+		},
+		{
+			"key": "encodedKey",
+			"value": "NDIzMDI4OWEtZmU2Ny00MGQxLWI4OTAtNjA0YTliYzRjMzI0OmEwN2ZmYmMzLWI1NWQtNDkwOS04Nzc2LWIxNTU4MzM2NjJhOA==",
+			"enabled": true
+		}
+	],
+	"name": "Globals",
+	"_postman_variable_scope": "globals",
+	"_postman_exported_at": "2022-10-22T00:43:38.009Z",
+	"_postman_exported_using": "Postman/10.0.35"
+}

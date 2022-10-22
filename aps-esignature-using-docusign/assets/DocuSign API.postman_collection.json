@@ -1,0 +1,114 @@
+{
+	"info": {
+		"_postman_id": "7bc33b55-9190-43b7-a9f0-179329e3126b",
+		"name": "DocuSign API",
+		"schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json",
+		"_exporter_id": "2755505"
+	},
+	"item": [
+		{
+			"name": "Authorize Code Grant Access Token",
+			"event": [
+				{
+					"listen": "test",
+					"script": {
+						"exec": [
+							"var jsonData = JSON.parse(responseBody);",
+							"postman.setEnvironmentVariable(\"accessToken\", jsonData.access_token);",
+							"var jsonData = JSON.parse(responseBody);",
+							"postman.setEnvironmentVariable(\"refreshToken\", jsonData.refresh_token);"
+						],
+						"type": "text/javascript"
+					}
+				},
+				{
+					"listen": "prerequest",
+					"script": {
+						"exec": [
+							""
+						],
+						"type": "text/javascript"
+					}
+				}
+			],
+			"request": {
+				"auth": {
+					"type": "noauth"
+				},
+				"method": "POST",
+				"header": [
+					{
+						"key": "Authorization",
+						"value": "Basic {{encodedKey}}"
+					},
+					{
+						"key": "Accept",
+						"value": "application/json",
+						"type": "text",
+						"disabled": true
+					}
+				],
+				"body": {
+					"mode": "urlencoded",
+					"urlencoded": [
+						{
+							"key": "code",
+							"value": "{{authorizationCodeFromURL}}"
+						},
+						{
+							"key": "grant_type",
+							"value": "authorization_code"
+						}
+					]
+				},
+				"url": {
+					"raw": "https://{{hostenv}}/oauth/token",
+					"protocol": "https",
+					"host": [
+						"{{hostenv}}"
+					],
+					"path": [
+						"oauth",
+						"token"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "Get Encoded Keys In Console",
+			"event": [
+				{
+					"listen": "prerequest",
+					"script": {
+						"exec": [
+							"var integrationKey = pm.globals.get('integrationKey')",
+							"var secretKey = pm.globals.get('secretKey')",
+							"",
+							"console.log(' Integration Key >>> ',integrationKey)",
+							"console.log(' Secret Key >>> ', secretKey)",
+							"console.log(' BTOA >>> ',btoa(integrationKey+':'+secretKey))",
+							"",
+							"postman.setGlobalVariable('encodedKey', btoa(integrationKey+':'+secretKey));"
+						],
+						"type": "text/javascript"
+					}
+				}
+			],
+			"request": {
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "http://www.google.com",
+					"protocol": "http",
+					"host": [
+						"www",
+						"google",
+						"com"
+					]
+				}
+			},
+			"response": []
+		}
+	]
+}
