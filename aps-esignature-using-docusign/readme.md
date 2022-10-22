@@ -9,7 +9,7 @@ As part of APS workflow, documents should be electronically signed using DocuSig
 
 * Alfresco Process Services (powered by Activiti) (Version 1.9 and above) - If you don't have it already, you can download a 30 day trial from [Alfresco Process Services (APS)](https://www.alfresco.com/products/business-process-management/alfresco-activiti).Instructions & help available at [Activiti Docs](http://docs.alfresco.com/activiti/docs/), [Alfresco BPM Community](https://community.alfresco.com/community/bpm)
 * [DocuSign Developer Account](https://developers.docusign.com/)
-* Postman
+* [Postman](https://www.postman.com/downloads/)
 
 ## Configuration Steps
 
