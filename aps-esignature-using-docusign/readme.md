@@ -121,9 +121,9 @@ Required Values:
 
 > Host Name for POSTMAN URL is `account-d.docusign.com`
 
-Import (Right Click > Save Link As) and Run the [postman collection available here](assets/DocuSign%20API.postman_collection.json).
+Import (Right Click > Save Link As) the [global variables available here](assets/workspace.postman_globals.json).
 
-Import (Right Click > Save Link As) the [global valriables available here](assets/workspace.postman_globals.json).
+Import (Right Click > Save Link As) and Run the [postman collection available here](assets/DocuSign%20API.postman_collection.json).
 
 ![DS11](assets/11.png)
 
