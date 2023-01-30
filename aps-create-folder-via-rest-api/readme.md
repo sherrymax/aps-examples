@@ -31,8 +31,11 @@ Build a process to create a folder in the ACS repo with some metdata.
 
 5. The APS Endpoint configuration for REST call. ![Endpoint](images/Endpoint.png)
 6. Publish/Deploy the App.
+7. An example of response mapping is below.
+ ![ResponseMapping](images/response-mapping.png)
 
 ### Run the DEMO
+
 
 ### References
 
