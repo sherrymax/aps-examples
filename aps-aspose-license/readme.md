@@ -11,9 +11,9 @@ We ship a full Aspose license with Activiti v1.4.1 either embedded in the binary
 
 In order to deploy the license "transform.lic" properly you do have three options available.
 
-1.) Drop the license "transform.lic" at Tomcat's classpath, e.g. <Activiti_Install_Folder>/tomcat/lib/
-2.) Set the property aspose.license=<Path to folder containing the license>/transform.lic in "activiti-app.properties"
-3.) Drop the license "transform.lic at user.home folder of the user who has started the Activiti instance and rename it to "Aspose.Total.Java.lic" => "<user.home>/.activiti/enterprise-license/Aspose.Total.Java.lic"
+* 1. Drop the license "transform.lic" at Tomcat's classpath, e.g. <Activiti_Install_Folder>/tomcat/lib/
+* 2. Set the property aspose.license=<Path to folder containing the license>/transform.lic in "activiti-app.properties"
+* 3. Drop the license "transform.lic at user.home folder of the user who has started the Activiti instance and rename it to "Aspose.Total.Java.lic" => "<user.home>/.activiti/enterprise-license/Aspose.Total.Java.lic"
 
 For all three options, you need to restart the instance.
 
