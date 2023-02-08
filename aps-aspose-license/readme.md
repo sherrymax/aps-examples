@@ -17,5 +17,5 @@ In order to deploy the license "transform.lic" properly you do have three option
 
 For all three options, you need to restart the instance.
 
-###References
+### References
 * https://community.hyland.com/tskb/ALF000005192-aspose-evaluation-only-red-banner
