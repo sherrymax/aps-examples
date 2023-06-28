@@ -147,7 +147,16 @@ Navigate to `Endpoints` after clicking `Tenants`
 
 Please Note :
 
+* The order of the Headers should not be changed, as the script in the process goes by order. This can be modified later.
+
+* The order of Headers should be as follows :
+  1. Authorization
+  2. Content-Type
+  3. DocuSignAccountID
+
 * `Authorization` Header value should use `Bearer` appended to Token generated from Step # 6.
+
+* `Content-Type` Header value should use `application/json`.
 
 * `DocuSignAccountID` Header value should use API Account ID from Step # 2.
 
