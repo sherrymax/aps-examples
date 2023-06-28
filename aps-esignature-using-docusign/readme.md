@@ -160,7 +160,7 @@ Please Note :
 
 * `DocuSignAccountID` Header value should use API Account ID from Step # 2.
 
-![DS13](assets/13.png)
+![DS13](assets/13a.png)
 
 Save entry to add the Endpoint.
 
