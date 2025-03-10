@@ -2,7 +2,7 @@
 
 ### Use-Case / Requirement
 
-As part of the process, it is required to capture an image using APS Form and generate a document out of a template and upload to ECM.
+As part of the process, it is required to capture an image using APS Form and generate a document out of a template.
 
 ### Prerequisites to run this demo end-2-end
 
@@ -19,11 +19,7 @@ As part of the process, it is required to capture an image using APS Form and ge
 5. The Generate Document Task. ![Generate-Document-Task](images/Generate-Document-Task.png)
 6. The Generate Document Task : Custom Template. ![Generate-Document-Task-Custom-Template](images/Generate-Document-Task-Custom-Template.png)
 [A custom template is available here](images/Generate-Doc-Template.docx):
-
-7. The Generate Document Task : Global Template. ![Generate-Document-Task-Global-Template](images/Generate-Document-Task-Global-Template.png)
-8. The Upload to ACS Task configuration. ![Upload-To-ACS-Task](images/Upload-To-ACS-Task.png)
-![Upload-To-ACS-Task-Configuration](images/Upload-To-ACS-Task-Configuration.png)
-9. Publish/Deploy the App.
+7. Publish/Deploy the App.
 
 ### Run the DEMO
 
