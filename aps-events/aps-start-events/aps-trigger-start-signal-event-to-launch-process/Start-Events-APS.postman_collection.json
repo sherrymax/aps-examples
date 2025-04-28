@@ -1,0 +1,427 @@
+{
+	"info": {
+		"_postman_id": "035e4559-9984-4216-8e72-6d518b1fc06c",
+		"name": "Start-Events-APS",
+		"schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json",
+		"_exporter_id": "2755505"
+	},
+	"item": [
+		{
+			"name": "Invoke Signal Event By Execution ID",
+			"request": {
+				"auth": {
+					"type": "basic",
+					"basic": [
+						{
+							"key": "password",
+							"value": "demo",
+							"type": "string"
+						},
+						{
+							"key": "username",
+							"value": "demo",
+							"type": "string"
+						}
+					]
+				},
+				"method": "PUT",
+				"header": [
+					{
+						"key": "cache-control",
+						"value": "no-cache"
+					},
+					{
+						"key": "content-type",
+						"value": "application/json"
+					}
+				],
+				"body": {
+					"mode": "raw",
+					"raw": "{\n\"action\":\"signalEventReceived\",\n\"signalName\":\"testSigDef\"\n}"
+				},
+				"url": {
+					"raw": "http://localhost:3000/activiti-app/api/runtime/executions/2579?tenantId=tenant_1",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "3000",
+					"path": [
+						"activiti-app",
+						"api",
+						"runtime",
+						"executions",
+						"2579"
+					],
+					"query": [
+						{
+							"key": "tenantId",
+							"value": "tenant_1"
+						}
+					]
+				},
+				"description": "Execution ID is similar to Token. These IDs are available from act_ru_event_subbscr table."
+			},
+			"response": []
+		},
+		{
+			"name": "Query and Manage Process Instances",
+			"request": {
+				"auth": {
+					"type": "basic",
+					"basic": [
+						{
+							"key": "password",
+							"value": "demo",
+							"type": "string"
+						},
+						{
+							"key": "username",
+							"value": "demo",
+							"type": "string"
+						}
+					]
+				},
+				"method": "POST",
+				"header": [
+					{
+						"key": "cache-control",
+						"value": "no-cache"
+					},
+					{
+						"key": "content-type",
+						"value": "application/json"
+					}
+				],
+				"body": {
+					"mode": "raw",
+					"raw": "{\n  \"excludeSubprocesses\": true\n}"
+				},
+				"url": {
+					"raw": "https://voyager-elb.alfdemo.com/activiti-app/api/enterprise/historic-process-instances/query",
+					"protocol": "https",
+					"host": [
+						"voyager-elb",
+						"alfdemo",
+						"com"
+					],
+					"path": [
+						"activiti-app",
+						"api",
+						"enterprise",
+						"historic-process-instances",
+						"query"
+					]
+				},
+				"description": "Execution ID is similar to Token. These IDs are available from act_ru_event_subbscr table."
+			},
+			"response": []
+		},
+		{
+			"name": "Start Process By Message Event",
+			"request": {
+				"auth": {
+					"type": "basic",
+					"basic": [
+						{
+							"key": "password",
+							"value": "demo",
+							"type": "string"
+						},
+						{
+							"key": "username",
+							"value": "demo",
+							"type": "string"
+						}
+					]
+				},
+				"method": "POST",
+				"header": [
+					{
+						"key": "cache-control",
+						"value": "no-cache"
+					},
+					{
+						"key": "content-type",
+						"value": "application/json"
+					}
+				],
+				"body": {
+					"mode": "raw",
+					"raw": "{\n    \"message\": \"myMessage\",\n    \"tenantId\": \"tenant_1\",\n    \"variables\": [\n        {\n            \"name\": \"varFromMessage\",\n            \"value\": \"This is from start message event\"\n        }\n    ]\n}"
+				},
+				"url": {
+					"raw": "https://voyager-elb.alfdemo.com/activiti-app/api/runtime/process-instances?tenantId=tenant_1",
+					"protocol": "https",
+					"host": [
+						"voyager-elb",
+						"alfdemo",
+						"com"
+					],
+					"path": [
+						"activiti-app",
+						"api",
+						"runtime",
+						"process-instances"
+					],
+					"query": [
+						{
+							"key": "tenantId",
+							"value": "tenant_1"
+						}
+					]
+				},
+				"description": "Execution ID is similar to Token. These IDs are available from act_ru_event_subbscr table."
+			},
+			"response": []
+		},
+		{
+			"name": "Start Process By Signal Event (Global)",
+			"request": {
+				"auth": {
+					"type": "basic",
+					"basic": [
+						{
+							"key": "password",
+							"value": "demo",
+							"type": "string"
+						},
+						{
+							"key": "username",
+							"value": "demo",
+							"type": "string"
+						}
+					]
+				},
+				"method": "POST",
+				"header": [
+					{
+						"key": "cache-control",
+						"value": "no-cache"
+					},
+					{
+						"key": "content-type",
+						"value": "application/json"
+					}
+				],
+				"body": {
+					"mode": "raw",
+					"raw": "{\n    \"signalName\": \"mySignal\",\n    \"tenantId\": \"tenant_1\",\n    \"async\": \"false\",\n    \"variables\": [\n        {\n            \"name\": \"varFromSignal\",\n            \"value\": \"This is from start signal event\"\n        }\n    ]\n}"
+				},
+				"url": {
+					"raw": "https://voyager-elb.alfdemo.com/activiti-app/api/runtime/signals?tenantId=tenant_1",
+					"protocol": "https",
+					"host": [
+						"voyager-elb",
+						"alfdemo",
+						"com"
+					],
+					"path": [
+						"activiti-app",
+						"api",
+						"runtime",
+						"signals"
+					],
+					"query": [
+						{
+							"key": "tenantId",
+							"value": "tenant_1"
+						}
+					]
+				},
+				"description": "Execution ID is similar to Token. These IDs are available from act_ru_event_subbscr table."
+			},
+			"response": []
+		},
+		{
+			"name": "Start Process By Signal Event (Instance Id)",
+			"request": {
+				"auth": {
+					"type": "basic",
+					"basic": [
+						{
+							"key": "password",
+							"value": "demo",
+							"type": "string"
+						},
+						{
+							"key": "username",
+							"value": "demo",
+							"type": "string"
+						}
+					]
+				},
+				"method": "POST",
+				"header": [
+					{
+						"key": "cache-control",
+						"value": "no-cache"
+					},
+					{
+						"key": "content-type",
+						"value": "application/json"
+					}
+				],
+				"body": {
+					"mode": "raw",
+					"raw": "{\n    \"signalName\": \"mySignal\",\n    \"tenantId\": \"tenant_1\",\n    \"async\": \"false\",\n    \"variables\": [\n        {\n            \"name\": \"varFromSignal\",\n            \"value\": \"This is from start signal event\"\n        }\n    ]\n}"
+				},
+				"url": {
+					"raw": "https://voyager-elb.alfdemo.com/activiti-app/api/runtime/signals?tenantId=tenant_1&processInstanceId=<instanceID>",
+					"protocol": "https",
+					"host": [
+						"voyager-elb",
+						"alfdemo",
+						"com"
+					],
+					"path": [
+						"activiti-app",
+						"api",
+						"runtime",
+						"signals"
+					],
+					"query": [
+						{
+							"key": "tenantId",
+							"value": "tenant_1"
+						},
+						{
+							"key": "processInstanceId",
+							"value": "<instanceID>"
+						}
+					]
+				},
+				"description": "Execution ID is similar to Token. These IDs are available from act_ru_event_subbscr table."
+			},
+			"response": []
+		},
+		{
+			"name": "Start Process",
+			"request": {
+				"auth": {
+					"type": "basic",
+					"basic": [
+						{
+							"key": "password",
+							"value": "demo",
+							"type": "string"
+						},
+						{
+							"key": "username",
+							"value": "demo",
+							"type": "string"
+						}
+					]
+				},
+				"method": "POST",
+				"header": [
+					{
+						"key": "cache-control",
+						"value": "no-cache"
+					},
+					{
+						"key": "content-type",
+						"value": "application/json"
+					}
+				],
+				"body": {
+					"mode": "raw",
+					"raw": "{\n  \"processDefinitionId\": \"MessageMe:2:8823\"\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "https://voyager-elb.alfdemo.com/activiti-app/api/enterprise/process-instances",
+					"protocol": "https",
+					"host": [
+						"voyager-elb",
+						"alfdemo",
+						"com"
+					],
+					"path": [
+						"activiti-app",
+						"api",
+						"enterprise",
+						"process-instances"
+					]
+				},
+				"description": "Execution ID is similar to Token. These IDs are available from act_ru_event_subbscr table."
+			},
+			"response": []
+		},
+		{
+			"name": "Get All Executions For a Tenant By Instance ID",
+			"request": {
+				"auth": {
+					"type": "basic",
+					"basic": [
+						{
+							"key": "password",
+							"value": "demo",
+							"type": "string"
+						},
+						{
+							"key": "username",
+							"value": "demo",
+							"type": "string"
+						}
+					]
+				},
+				"method": "GET",
+				"header": [],
+				"body": {
+					"mode": "formdata",
+					"formdata": []
+				},
+				"url": {
+					"raw": "http://localhost:3000/activiti-app/api/runtime/executions?tenantId=tenant_1&processInstanceId=5333",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "3000",
+					"path": [
+						"activiti-app",
+						"api",
+						"runtime",
+						"executions"
+					],
+					"query": [
+						{
+							"key": "tenantId",
+							"value": "tenant_1"
+						},
+						{
+							"key": "processInstanceId",
+							"value": "5333"
+						}
+					]
+				}
+			},
+			"response": []
+		}
+	],
+	"event": [
+		{
+			"listen": "prerequest",
+			"script": {
+				"type": "text/javascript",
+				"exec": [
+					""
+				]
+			}
+		},
+		{
+			"listen": "test",
+			"script": {
+				"type": "text/javascript",
+				"exec": [
+					""
+				]
+			}
+		}
+	]
+}

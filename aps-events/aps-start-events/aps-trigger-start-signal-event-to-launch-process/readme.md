@@ -55,6 +55,8 @@ An example is as follows:
 11. The form in target process. ![Target-Form](resources/Target-Form.png)
 12. Publish/Deploy the App.
 
+POSTMAN Collection is available at [Start-Events-APS.postman_collection.json](Start-Events-APS.postman_collection.json)
+
 ### Run the DEMO
 
 ### References
