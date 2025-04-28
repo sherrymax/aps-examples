@@ -22,6 +22,8 @@ Header value: application/json
 ```
 6. REST Call Endpoint in triggering process. ![Source-REST-Endpoint](resources/Source-REST-Endpoint.png)
 ```
+Call Type : POST
+
 Endpoint for Instance specific calls
 http://<hostname>:<port>/activiti-app/api/runtime/signals?tenantId=<tenantId>&processInstanceId=<instanceID>
 
