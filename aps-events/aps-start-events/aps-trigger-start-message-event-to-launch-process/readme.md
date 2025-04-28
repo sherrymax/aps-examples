@@ -14,19 +14,18 @@ A process can have the necessity to launch another process based on a business r
 1. Setup Alfresco Activiti if you don't have one already. Instructions & help available at [Activiti Docs](http://docs.alfresco.com/activiti/docs/), [Alfresco BPM Community](https://community.alfresco.com/community/bpm)
 2. Import the [Launch-process-by-start-message-event.zip](Launch-process-by-start-message-event.zip) app available in this project into Activiti.
 3. The process diagram of triggering process ![Triggering Process](resources/Source-Process-Flow.png)
-4. REST Call Configuration in triggering process. ![Source-REST-Configuration](resources/Source-REST-Configuration.png)
-5. REST Call Request Headers in triggering process. ![Source-REST-Headers](resources/Source-REST-Headers.png)
 ```
 Header name: Content-Type
 Header value: application/json
 ```
-6. REST Call Endpoint in triggering process. ![Source-REST-Endpoint](resources/Source-REST-Endpoint.png)
+4. REST Call Endpoint in triggering process. 
+
 ```
 Endpoint:
 http://<hostname>:<port>/activiti-app/api/runtime/process-instances?tenantId=<tenantId>
 
 ```
-7. REST Call Request Mapping in triggering process. ![Source-REST-RequestMapping](resources/Source-REST-RequestMapping.png)
+5. REST Call Request Body in triggering process. 
 ```
 The values are:
 message - The name of the message definition you are throwing and catching. You will need to define this in the process that you want to catch.
@@ -46,11 +45,8 @@ An example is as follows:
     ]
 }
 ```
-8. The process diagram of target process. ![Target-Process-Flow](resources/Target-Process-Flow.png)
-9. The start message event. ![Target-Message-Reference](resources/Target-Message-Reference.png)
-10. The message event definition. ![Target-Message-Definition](resources/Target-Message-Definition.png)
-11. The form in target process. ![Target-Form](resources/Target-Form.png)
-12. Publish/Deploy the App.
+6. Publish/Deploy the App.
+7. POSTMAN Collection is available at [Start-Events-APS.postman_collection.json](Start-Events-APS.postman_collection.json)
 
 ### Run the DEMO
 
